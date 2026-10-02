@@ -43,6 +43,25 @@
           "notes": ""
         }
       ]
+    },
+    {
+      "id": "widgethost.sysmon",
+      "name": "系統監視器",
+      "author": "markb",
+      "description": "CPU、記憶體、網路上下行的即時數值與歷史曲線，每秒更新。只用 Windows 內建 API，不需要系統管理員權限。",
+      "homepage": "",
+      "capabilities": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.0.0.widgetpkg",
+          "sha256": "9d58d0dede24ccfac9303440e0e1f5e531ff0d046ecb6e8e99e09642330fe65b",
+          "size": 14504,
+          "released": "2026-10-02",
+          "notes": ""
+        }
+      ]
     }
   ]
 }
