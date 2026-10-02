@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "name": "WidgetHost 官方市集",
+  "updated": "2026-10-02",
+  "plugins": [
+    {
+      "id": "widgethost.clock",
+      "name": "桌面時鐘",
+      "author": "markb",
+      "description": "極簡桌面數位時鐘：任意角度旋轉、多時區、自訂格式、陰影／描邊／光暈、背景底板。",
+      "homepage": "",
+      "capabilities": [],
+      "versions": [
+        {
+          "version": "3.0.0",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.0.0.widgetpkg",
+          "sha256": "7521a1d2b815aaec8de67f9b365f0973dee799a963181fe76e1cbbf64a13b7ab",
+          "size": 23462,
+          "released": "2026-10-02",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "widgethost.equalizer",
+      "name": "音訊等化器",
+      "author": "markb",
+      "description": "即時顯示系統正在播放的聲音頻譜（長條、鏡像、圓形、圓環、曲線、點陣），並可顯示正在播放的媒體與控制按鈕。",
+      "homepage": "",
+      "capabilities": [
+        "audio",
+        "mediaControl"
+      ],
+      "versions": [
+        {
+          "version": "2.0.0",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.0.0.widgetpkg",
+          "sha256": "f5f3f3a692c4e55e142731cfb2b643a656a8c9a118ca01b4c21139b2a3583ec4",
+          "size": 6663274,
+          "released": "2026-10-02",
+          "notes": ""
+        }
+      ]
+    }
+  ]
+}

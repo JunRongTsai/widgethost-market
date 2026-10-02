@@ -1,0 +1,6 @@
+# 目錄與簽章的位元組必須原樣保存：簽章是對原始位元組算的
+catalog.json -text
+catalog.json.sig -text
+*.widgetpkg binary
+*.md text eol=lf
+.gitattributes text eol=lf
