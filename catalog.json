@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "plugins": [
     {
       "id": "widgethost.battery",
@@ -17,7 +17,26 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.0.0.widgetpkg",
           "sha256": "5d332a076b34cc4ae0ae7da48a4053ec698d8b29bafc5f482d4666661fec88a8",
           "size": 31836,
-          "released": "2026-10-03",
+          "released": "2026-10-04",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "widgethost.calendar",
+      "name": "農曆行事曆",
+      "author": "markb",
+      "description": "月曆加農曆、二十四節氣、台灣節日，以及可自訂的倒數日（支援農曆生日、每年重複）。",
+      "homepage": "",
+      "capabilities": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.0.0.widgetpkg",
+          "sha256": "e328dcad15a718d94a1e3ac45f631dc8a76881a2ceb696259da662f6ebadcc51",
+          "size": 20170,
+          "released": "2026-10-04",
           "notes": ""
         }
       ]
@@ -36,7 +55,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.0.0.widgetpkg",
           "sha256": "7521a1d2b815aaec8de67f9b365f0973dee799a963181fe76e1cbbf64a13b7ab",
           "size": 23462,
-          "released": "2026-10-03",
+          "released": "2026-10-04",
           "notes": ""
         }
       ]
@@ -58,7 +77,26 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.0.0.widgetpkg",
           "sha256": "f5f3f3a692c4e55e142731cfb2b643a656a8c9a118ca01b4c21139b2a3583ec4",
           "size": 6663274,
-          "released": "2026-10-03",
+          "released": "2026-10-04",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "widgethost.pomodoro",
+      "name": "番茄鐘",
+      "author": "markb",
+      "description": "番茄鐘（專注／短休息／長休息自動輪替）、倒數計時器與碼表。環形進度、到點提示音、可指定全域快速鍵。",
+      "homepage": "",
+      "capabilities": [],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.0.0.widgetpkg",
+          "sha256": "2b3a6ff2d493c545a07be9711597f9d180e589ea836ce5ff315fb20701a625a8",
+          "size": 15225,
+          "released": "2026-10-04",
           "notes": ""
         }
       ]
@@ -67,7 +105,7 @@
       "id": "widgethost.sysmon",
       "name": "系統監視器",
       "author": "markb",
-      "description": "CPU、記憶體、網路上下行的即時數值與歷史曲線，每秒更新。只用 Windows 內建 API，不需要系統管理員權限。",
+      "description": "CPU、記憶體、網路上下行、磁碟讀寫、GPU、每核心使用率的即時數值與歷史曲線，每秒更新。只用 Windows 內建 API 與效能計數器，不需要系統管理員權限。",
       "homepage": "",
       "capabilities": [],
       "versions": [
@@ -77,7 +115,16 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.0.0.widgetpkg",
           "sha256": "9d58d0dede24ccfac9303440e0e1f5e531ff0d046ecb6e8e99e09642330fe65b",
           "size": 14504,
-          "released": "2026-10-03",
+          "released": "2026-10-04",
+          "notes": ""
+        },
+        {
+          "version": "1.1.0",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.1.0.widgetpkg",
+          "sha256": "459ef7ac3311b71a5017f1d9fb3da9c2af40e4bd96ca39bb2fecff97c1263c50",
+          "size": 18412,
+          "released": "2026-10-04",
           "notes": ""
         }
       ]
