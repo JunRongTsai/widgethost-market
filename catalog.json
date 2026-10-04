@@ -57,6 +57,15 @@
           "size": 23462,
           "released": "2026-10-04",
           "notes": ""
+        },
+        {
+          "version": "3.0.1",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.0.1.widgetpkg",
+          "sha256": "53077ccafa6209fef65eba666c075968cfabff8ca2a02ef23aa21a835d982f88",
+          "size": 23893,
+          "released": "2026-10-04",
+          "notes": ""
         }
       ]
     },
