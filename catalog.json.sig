@@ -1,1 +1,1 @@
-widgethost-catalog-sig-v1:81e869e675652df8:MEQCIQCQeuTcykS4M4ZqZKP3Zy77tt8pB4X2saTqaswigdVMIQIfJO6FhnpbCVZbFSogqaXaT/61s+73LO3156JQEmbcqA==
+widgethost-catalog-sig-v1:81e869e675652df8:MEYCIQDleRmot6nVCm9aXUN7OG8XmyW69MwYcfA7XWRps860wQIhALtp8yfcnj6mD8uegn7rW1lgn95nAxNYmYRjxb1pscQB

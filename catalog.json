@@ -1,7 +1,7 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-04",
+  "updated": "2026-10-06",
   "plugins": [
     {
       "id": "widgethost.battery",
@@ -17,7 +17,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.0.0.widgetpkg",
           "sha256": "5d332a076b34cc4ae0ae7da48a4053ec698d8b29bafc5f482d4666661fec88a8",
           "size": 31836,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
           "notes": ""
         }
       ]
@@ -36,7 +36,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.0.0.widgetpkg",
           "sha256": "e328dcad15a718d94a1e3ac45f631dc8a76881a2ceb696259da662f6ebadcc51",
           "size": 20170,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
           "notes": ""
         }
       ]
@@ -55,7 +55,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.0.0.widgetpkg",
           "sha256": "7521a1d2b815aaec8de67f9b365f0973dee799a963181fe76e1cbbf64a13b7ab",
           "size": 23462,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
           "notes": ""
         },
         {
@@ -64,7 +64,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.0.1.widgetpkg",
           "sha256": "53077ccafa6209fef65eba666c075968cfabff8ca2a02ef23aa21a835d982f88",
           "size": 23893,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
           "notes": ""
         }
       ]
@@ -86,7 +86,28 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.0.0.widgetpkg",
           "sha256": "f5f3f3a692c4e55e142731cfb2b643a656a8c9a118ca01b4c21139b2a3583ec4",
           "size": 6663274,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "widgethost.launcher",
+      "name": "應用程式群組",
+      "author": "markb",
+      "description": "RocketDock 式的程式群組：把程式、捷徑、資料夾或網址拖進來就加入，拖出去就移除。可建立多個群組、自訂群組名稱與位置、更換圖示，滑鼠停留有放大／上浮／發光效果，點選有彈跳／脈衝／漣漪／閃光效果。",
+      "homepage": "",
+      "capabilities": [
+        "fileSystem"
+      ],
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.1.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.0.0.widgetpkg",
+          "sha256": "b3571fa1cf43a237550236f24a4726fd42d276768938e68855d12d16b222c8a2",
+          "size": 41864,
+          "released": "2026-10-06",
           "notes": ""
         }
       ]
@@ -105,7 +126,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.0.0.widgetpkg",
           "sha256": "2b3a6ff2d493c545a07be9711597f9d180e589ea836ce5ff315fb20701a625a8",
           "size": 15225,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
           "notes": ""
         }
       ]
@@ -124,7 +145,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.0.0.widgetpkg",
           "sha256": "9d58d0dede24ccfac9303440e0e1f5e531ff0d046ecb6e8e99e09642330fe65b",
           "size": 14504,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
           "notes": ""
         },
         {
@@ -133,7 +154,7 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.1.0.widgetpkg",
           "sha256": "459ef7ac3311b71a5017f1d9fb3da9c2af40e4bd96ca39bb2fecff97c1263c50",
           "size": 18412,
-          "released": "2026-10-04",
+          "released": "2026-10-06",
           "notes": ""
         }
       ]
