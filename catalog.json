@@ -146,18 +146,27 @@
           "size": 50840,
           "released": "2026-10-07",
           "notes": ""
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.2.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.2.0.widgetpkg",
+          "sha256": "fc04fabd56a6bce3194ef2cd86d8997bfa741b8771a2d8a8709cd00f6bf25a29",
+          "size": 51469,
+          "released": "2026-10-07",
+          "notes": ""
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher.screenshot1.jpg",
-          "sha256": "1815cf13d88c11207d0bfd9a321ae198f89c25f6f77310098b475e5aeeddec47",
-          "size": 59691
+          "sha256": "49ca82baecb298859e30808daf2931c21fb8a98434b63e566b20f72882306a70",
+          "size": 59663
         },
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher.screenshot2.jpg",
-          "sha256": "5bc3dec5a5921c2d93c292f3c1ee81534de26e3e5959b60e2fc4a9a01ef534b3",
-          "size": 39016
+          "sha256": "263d601b48f0e02aa15ff6734b9b4cad463d9f8d7380cbeefbb2967484fe6218",
+          "size": 39012
         }
       ]
     },
@@ -212,13 +221,22 @@
           "size": 18412,
           "released": "2026-10-07",
           "notes": ""
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.0.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.2.0.widgetpkg",
+          "sha256": "bff539a73404aa671acaf7538eb17b4c25378f2abaaedabfea2e73aada8a2258",
+          "size": 18819,
+          "released": "2026-10-07",
+          "notes": ""
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon.screenshot1.jpg",
-          "sha256": "0faf602cd5d5485a5190bcb81f1b37b1a3879519d900cdaeb00f623a1a069131",
-          "size": 57482
+          "sha256": "ae4bf446f0fe73804ba99b741e69854f53d4a3ffb315f95aa871dfda145fb972",
+          "size": 57082
         }
       ]
     }
