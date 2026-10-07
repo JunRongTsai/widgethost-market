@@ -67,6 +67,15 @@
           "size": 21478,
           "released": "2026-10-08",
           "notes": ""
+        },
+        {
+          "version": "1.1.1",
+          "minHostVersion": "1.3.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.1.1.widgetpkg",
+          "sha256": "7144f2fcd8122e8a7de26ba8e669d0b9fe8dff2f0a454aa40d1783769fc615e2",
+          "size": 21606,
+          "released": "2026-10-08",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -153,6 +162,15 @@
           "size": 6665673,
           "released": "2026-10-08",
           "notes": ""
+        },
+        {
+          "version": "2.1.1",
+          "minHostVersion": "1.3.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.1.1.widgetpkg",
+          "sha256": "3274865e8bab78d35296a0c08739907de1867b847f3e583601a732f70ca4b65e",
+          "size": 6665593,
+          "released": "2026-10-08",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -217,6 +235,15 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.3.0.widgetpkg",
           "sha256": "382cd47354f78f1a339038328f9fb172ec38061b5dcbf8161cececb0bd5dec2a",
           "size": 55724,
+          "released": "2026-10-08",
+          "notes": ""
+        },
+        {
+          "version": "1.3.1",
+          "minHostVersion": "1.3.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.3.1.widgetpkg",
+          "sha256": "6346eef537ecbca3f92476b0adc9b29c09adb88822383f1232adf53bf89021a8",
+          "size": 55846,
           "released": "2026-10-08",
           "notes": ""
         }
