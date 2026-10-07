@@ -155,6 +155,15 @@
           "size": 51469,
           "released": "2026-10-07",
           "notes": ""
+        },
+        {
+          "version": "1.2.1",
+          "minHostVersion": "1.3.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.2.1.widgetpkg",
+          "sha256": "5897bb0556418e1f9046ecb0dd0c7d273338bc312ef020ddefc3183b611373ce",
+          "size": 51403,
+          "released": "2026-10-07",
+          "notes": ""
         }
       ],
       "screenshots": [
