@@ -345,6 +345,15 @@
           "size": 34026,
           "released": "2026-10-10",
           "notes": ""
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.3.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks-1.3.0.widgetpkg",
+          "sha256": "543668952c4215587e645cabdd6dbe0a9a830a0c68d5d63073c8c56a561b2edb",
+          "size": 35671,
+          "released": "2026-10-10",
+          "notes": ""
         }
       ],
       "screenshots": [
