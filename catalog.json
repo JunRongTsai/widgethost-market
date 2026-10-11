@@ -12,6 +12,17 @@
       "descriptionEn": "Battery levels of Bluetooth devices, Logitech receivers, HID devices and your laptop, scanned in the background.",
       "homepage": "",
       "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [
+          "bluetooth"
+        ],
+        "networkHosts": [],
+        "notes": "藍牙裝置的電量需要藍牙介面卡；Logitech 裝置需要 Unifying、Bolt 或 Lightspeed 接收器。",
+        "notesEn": "Bluetooth battery levels need a Bluetooth adapter; Logitech devices need a Unifying, Bolt or Lightspeed receiver."
+      },
       "versions": [
         {
           "version": "1.0.0",
@@ -39,6 +50,15 @@
           "size": 35147,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.2.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.2.1.widgetpkg",
+          "sha256": "e7cb7b4211574411780309fe9f384bde7ab90785e610230a7cf0d8b6c5dfc380",
+          "size": 35299,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -58,6 +78,7 @@
       "descriptionEn": "A month calendar with Chinese lunar dates, the 24 solar terms, Taiwan holidays and custom countdowns.",
       "homepage": "",
       "capabilities": [],
+      "requirements": null,
       "versions": [
         {
           "version": "1.0.0",
@@ -85,6 +106,15 @@
           "size": 21606,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.1.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.1.2.widgetpkg",
+          "sha256": "f5f1f071f5a12fae27cf74439e0aef6a83052588d7c0488dbaea2913587b16e4",
+          "size": 21614,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -104,6 +134,7 @@
       "descriptionEn": "A minimal digital desktop clock: any rotation angle, multiple time zones, custom formats, shadow / outline / glow and a background panel.",
       "homepage": "",
       "capabilities": [],
+      "requirements": null,
       "versions": [
         {
           "version": "3.0.0",
@@ -131,6 +162,15 @@
           "size": 25486,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "3.1.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.1.1.widgetpkg",
+          "sha256": "3d8e588f2dd15bed1b0d8af1c86873adf208954533b988b87a710b60d14fc23c",
+          "size": 25500,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -153,6 +193,17 @@
         "audio",
         "mediaControl"
       ],
+      "requirements": {
+        "minWindowsBuild": 19041,
+        "architectures": [],
+        "hardware": [
+          "audioOutput"
+        ],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "媒體資訊與控制按鈕需要播放程式支援 Windows 系統媒體控制（Spotify、瀏覽器等大多支援）。",
+        "notesEn": "Media info and buttons need the player to support Windows system media controls (most do, including Spotify and browsers)."
+      },
       "versions": [
         {
           "version": "2.0.0",
@@ -180,6 +231,15 @@
           "size": 6665593,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "2.1.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.1.2.widgetpkg",
+          "sha256": "835f6d250f9098dc58e301150dcf38410d42647cff3fa64cb33a8ef3708e79d8",
+          "size": 6665796,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -201,6 +261,7 @@
       "capabilities": [
         "fileSystem"
       ],
+      "requirements": null,
       "versions": [
         {
           "version": "1.0.0",
@@ -289,6 +350,43 @@
       ]
     },
     {
+      "id": "widgethost.notes",
+      "name": "便利貼",
+      "nameEn": "Sticky notes",
+      "author": "markb",
+      "description": "桌面便利貼：按兩下直接在上面寫，「- [ ] 」開頭的行會變成可以打勾的待辦項目，完成的自動劃線。七種紙色、內容多時自動長高，要幾張就新增幾張。",
+      "descriptionEn": "Sticky notes for your desktop: double-click to write on them, lines starting with \"- [ ] \" become to-dos you can tick off. Seven paper colors, grows with its content, and you can add as many as you like.",
+      "homepage": "",
+      "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "內容存在 WidgetHost 的設定檔裡（純文字），請不要寫密碼等機密資料。",
+        "notesEn": "The text is stored in WidgetHost's settings file as plain text, so don't put passwords or other secrets in it."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes-1.0.0.widgetpkg",
+          "sha256": "bbc9d77798d7eade6cb459726fbd858570a39c6427e8db862c30f20cff2fc884",
+          "size": 18763,
+          "released": "2026-10-11",
+          "notes": ""
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes.screenshot1.jpg",
+          "sha256": "c5495bef8043e503ace3be8e338da67bcd623e44337f8ea062a40586350a8d94",
+          "size": 39528
+        }
+      ]
+    },
+    {
       "id": "widgethost.pomodoro",
       "name": "番茄鐘",
       "nameEn": "Pomodoro",
@@ -297,6 +395,17 @@
       "descriptionEn": "Pomodoro timer, countdown timer and stopwatch, with a progress ring, an alert sound and global hotkeys.",
       "homepage": "",
       "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [
+          "audioOutput"
+        ],
+        "networkHosts": [],
+        "notes": "到點提示音需要喇叭或耳機。",
+        "notesEn": "The alert sound needs speakers or headphones."
+      },
       "versions": [
         {
           "version": "1.0.0",
@@ -313,6 +422,15 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.1.0.widgetpkg",
           "sha256": "818aa803172054a6ec9cda1d756c9cfb9026cad54ce09898d1d5a7ab8b30d4f2",
           "size": 16002,
+          "released": "2026-10-11",
+          "notes": ""
+        },
+        {
+          "version": "1.1.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.1.1.widgetpkg",
+          "sha256": "c506c8811b1558c894b868d57cfd0fc5a24c6d06b009580823e6a83dbf5ed5d5",
+          "size": 16106,
           "released": "2026-10-11",
           "notes": ""
         }
@@ -336,6 +454,18 @@
       "capabilities": [
         "network"
       ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [
+          "query1.finance.yahoo.com",
+          "tw.stock.yahoo.com"
+        ],
+        "notes": "股價來自 Yahoo 財經；公司網路若封鎖這些網站就無法更新。",
+        "notesEn": "Quotes come from Yahoo Finance; it won't update if your network blocks these sites."
+      },
       "versions": [
         {
           "version": "1.0.0",
@@ -390,6 +520,15 @@
           "size": 38101,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.4.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks-1.4.1.widgetpkg",
+          "sha256": "ed3aee04bf57c7f29c0d641527390c3deeee30e360f07a1b92f839e1f664a93e",
+          "size": 38250,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -409,6 +548,15 @@
       "descriptionEn": "Live CPU, memory, network, disk, GPU and per-core usage with history graphs or Rainmeter-style rings, updated every second.",
       "homepage": "",
       "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "GPU 使用率需要顯示卡驅動程式提供 Windows 效能計數器；虛擬機器或遠端桌面可能沒有這項數據。",
+        "notesEn": "GPU usage needs the graphics driver to provide Windows performance counters; virtual machines and Remote Desktop may not have it."
+      },
       "versions": [
         {
           "version": "1.0.0",
@@ -445,6 +593,15 @@
           "size": 22938,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.3.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.3.1.widgetpkg",
+          "sha256": "cb66df44ca1b16194d435e6754302b2caf61b642bae094fb491932f3024eb947",
+          "size": 23149,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -457,6 +614,77 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon.screenshot2.jpg",
           "sha256": "e5d538cce72d26f347dc287099fbb9173b9553cf75e56a6057f4db3519f6d141",
           "size": 37067
+        }
+      ]
+    },
+    {
+      "id": "widgethost.weather",
+      "name": "天氣",
+      "nameEn": "Weather",
+      "author": "markb",
+      "description": "目前天氣、接下來 6 小時與 3～7 天預報，內建台灣 22 縣市，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
+      "descriptionEn": "Current weather, the next 6 hours and a 3–7 day forecast. Includes Taiwan's 22 cities and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
+      "homepage": "",
+      "capabilities": [
+        "network"
+      ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [
+          "api.open-meteo.com",
+          "geocoding-api.open-meteo.com"
+        ],
+        "notes": "需要連得到 Open-Meteo；公司網路若封鎖這個網站就無法更新。免費服務僅限非商業用途。",
+        "notesEn": "Needs access to Open-Meteo; it won't update if your network blocks the site. The free service is for non-commercial use."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.0.0.widgetpkg",
+          "sha256": "ede85796d36e0aa9f937c5a66a31eaf9b2e874562c1d6f36f8639cc05fe65748",
+          "size": 28711,
+          "released": "2026-10-11",
+          "notes": ""
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather.screenshot1.jpg",
+          "sha256": "1ccc3b283e0b50340eea95a79bf8c6bdfab4774ed5115fa4bb37a2bc310588f6",
+          "size": 52022
+        }
+      ]
+    },
+    {
+      "id": "widgethost.worldclock",
+      "name": "世界時鐘",
+      "nameEn": "World clock",
+      "author": "markb",
+      "description": "多個時區並排顯示：和本地的時差、明天／昨天、白天／晚上。清單、橫排卡片或指針時鐘面三種樣式，時區用 Windows 內建清單，夏令時間自動換算。",
+      "descriptionEn": "Several time zones side by side, with the time difference, tomorrow/yesterday and day/night. List, cards or analog clock faces; daylight saving time is handled by Windows.",
+      "homepage": "",
+      "capabilities": [],
+      "requirements": null,
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock-1.0.0.widgetpkg",
+          "sha256": "e98356b392882cae024470123364a8260a8350f16639cf710d98f1aaeb0c48be",
+          "size": 19972,
+          "released": "2026-10-11",
+          "notes": ""
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock.screenshot1.jpg",
+          "sha256": "6a5fd85be0b0e46cf73751f9ec96083ff62023cd702035d4de78308a2bb7c20f",
+          "size": 49194
         }
       ]
     }
