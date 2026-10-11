@@ -25,42 +25,6 @@
       },
       "versions": [
         {
-          "version": "1.0.0",
-          "minHostVersion": "1.0.0",
-          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.0.0.widgetpkg",
-          "sha256": "5d332a076b34cc4ae0ae7da48a4053ec698d8b29bafc5f482d4666661fec88a8",
-          "size": 31836,
-          "released": "2026-10-11",
-          "notes": ""
-        },
-        {
-          "version": "1.1.0",
-          "minHostVersion": "1.3.0",
-          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.1.0.widgetpkg",
-          "sha256": "e5343020884f4e687f97972d1015bf9f8009022cc0cde567d3e643b73b4bc6cc",
-          "size": 33293,
-          "released": "2026-10-11",
-          "notes": ""
-        },
-        {
-          "version": "1.2.0",
-          "minHostVersion": "1.4.0",
-          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.2.0.widgetpkg",
-          "sha256": "72d4390ee59fa394a1a8f5dbd01d9a1feeae9102d83ee57f113bd82bb17d8b52",
-          "size": 35147,
-          "released": "2026-10-11",
-          "notes": ""
-        },
-        {
-          "version": "1.2.1",
-          "minHostVersion": "1.4.0",
-          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.2.1.widgetpkg",
-          "sha256": "e7cb7b4211574411780309fe9f384bde7ab90785e610230a7cf0d8b6c5dfc380",
-          "size": 35299,
-          "released": "2026-10-11",
-          "notes": ""
-        },
-        {
           "version": "1.2.2",
           "minHostVersion": "1.4.0",
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.2.2.widgetpkg",
