@@ -7,7 +7,7 @@
       "id": "widgethost.battery",
       "name": "無線裝置電量",
       "nameEn": "Wireless battery",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "顯示所有連線中無線裝置的電量：藍牙滑鼠／鍵盤／耳機／手機、Logitech 接收器裝置、其他回報電量的 HID 裝置，以及筆電自身電池。只用 Windows 內建 API，不需要系統管理員權限。",
       "descriptionEn": "Battery levels of Bluetooth devices, Logitech receivers, HID devices and your laptop, scanned in the background.",
       "homepage": "",
@@ -68,6 +68,15 @@
           "size": 35288,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.3.0.widgetpkg",
+          "sha256": "7e6464391e77b6482d38b360f2b5fd406c9304b602c20d56c4dc5c833e46526c",
+          "size": 37224,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -82,7 +91,7 @@
       "id": "widgethost.calendar",
       "name": "農曆行事曆",
       "nameEn": "Lunar calendar",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "月曆加農曆、二十四節氣、台灣節日，以及可自訂的倒數日（支援農曆生日、每年重複）。",
       "descriptionEn": "A month calendar with Chinese lunar dates, the 24 solar terms, Taiwan holidays and custom countdowns.",
       "homepage": "",
@@ -124,6 +133,15 @@
           "size": 21614,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.2.0.widgetpkg",
+          "sha256": "21110d3db9ee1d3c2401a2c043c3d47d6fabb1b5df2494bae5812a3095142866",
+          "size": 23320,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -138,7 +156,7 @@
       "id": "widgethost.clock",
       "name": "桌面時鐘",
       "nameEn": "Desktop clock",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "極簡桌面數位時鐘：任意角度旋轉、多時區、自訂格式、陰影／描邊／光暈、背景底板。",
       "descriptionEn": "A minimal digital desktop clock: any rotation angle, multiple time zones, custom formats, shadow / outline / glow and a background panel.",
       "homepage": "",
@@ -180,6 +198,15 @@
           "size": 25500,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "3.1.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.1.2.widgetpkg",
+          "sha256": "9bb15d0d0e0af00cdbede4139600e4819d2e5c94c1fda6471d7445c42595762c",
+          "size": 25515,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -194,7 +221,7 @@
       "id": "widgethost.equalizer",
       "name": "音訊等化器",
       "nameEn": "Audio equalizer",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "即時顯示系統正在播放的聲音頻譜（長條、鏡像、圓形、圓環、曲線、點陣），並可顯示正在播放的媒體與控制按鈕。",
       "descriptionEn": "A live spectrum of the audio your PC is playing, with the current media and playback buttons.",
       "homepage": "",
@@ -249,6 +276,15 @@
           "size": 6665796,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "2.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.2.0.widgetpkg",
+          "sha256": "75a8b84f41271b296750cc5e2fc3098aeae50d5a52a04e65f2af9c1dd3e9d9e8",
+          "size": 6667575,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -263,7 +299,7 @@
       "id": "widgethost.launcher",
       "name": "應用程式群組",
       "nameEn": "App group",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "RocketDock 式的程式群組：把程式、捷徑、資料夾或網址拖進來就加入，拖出去就移除。可建立多個群組、自訂群組名稱與位置、更換圖示，滑鼠停留有放大／上浮／發光效果，點選有彈跳／脈衝／漣漪／閃光效果。",
       "descriptionEn": "RocketDock-style app groups: drag programs in to add them and out to remove them, with multiple groups, custom names and icons, and hover and click animations.",
       "homepage": "",
@@ -343,6 +379,15 @@
           "size": 56554,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.4.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.4.0.widgetpkg",
+          "sha256": "000edea7001739025b90aacf68d1be6170786628ee5ccc933511054c9cd03c91",
+          "size": 58398,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -362,7 +407,7 @@
       "id": "widgethost.notes",
       "name": "便利貼",
       "nameEn": "Sticky notes",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "桌面便利貼：按兩下直接在上面寫，「- [ ] 」開頭的行會變成可以打勾的待辦項目，完成的自動劃線。七種紙色、內容多時自動長高，要幾張就新增幾張。",
       "descriptionEn": "Sticky notes for your desktop: double-click to write on them, lines starting with \"- [ ] \" become to-dos you can tick off. Seven paper colors, grows with its content, and you can add as many as you like.",
       "homepage": "",
@@ -385,6 +430,15 @@
           "size": 18763,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes-1.0.1.widgetpkg",
+          "sha256": "6994c7706c35566a5433b33ff963b52d51537551b5f8516463cf6fe66f541043",
+          "size": 18798,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -399,7 +453,7 @@
       "id": "widgethost.pomodoro",
       "name": "番茄鐘",
       "nameEn": "Pomodoro",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "番茄鐘（專注／短休息／長休息自動輪替）、倒數計時器與碼表。環形進度、到點提示音、可指定全域快速鍵。",
       "descriptionEn": "Pomodoro timer, countdown timer and stopwatch, with a progress ring, an alert sound and global hotkeys.",
       "homepage": "",
@@ -442,6 +496,15 @@
           "size": 16106,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.2.0.widgetpkg",
+          "sha256": "6560676d133524ec70efb28091a0380231060f07e5dfb4e6e8fe5d8280a1b92b",
+          "size": 18041,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -453,10 +516,49 @@
       ]
     },
     {
+      "id": "widgethost.recyclebin",
+      "name": "資源回收筒",
+      "nameEn": "Recycle Bin",
+      "author": "JunRongTsai",
+      "description": "Rainmeter 風格的資源回收筒：顯示項目數與佔用大小，點圖示開啟、右鍵清空（會先確認）。把檔案拖到上面就移到資源回收筒（可以還原）。",
+      "descriptionEn": "A Rainmeter-style Recycle Bin showing the item count and size. Click the icon to open it, right-click to empty it (asks first), and drop files on it to move them to the Recycle Bin (they can be restored).",
+      "homepage": "",
+      "capabilities": [
+        "fileSystem"
+      ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "清空資源回收筒會永久刪除裡面的檔案，按下去之前會先問你。拖進來的檔案只是移到資源回收筒，還可以還原。",
+        "notesEn": "Emptying the Recycle Bin permanently deletes its files, so it asks first. Files dropped on it are only moved to the Recycle Bin and can be restored."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.recyclebin-1.0.0.widgetpkg",
+          "sha256": "22e5095c89dbaa21dd72e3548745d6ff731992d1e57f9fee67b8e29081ca4441",
+          "size": 21031,
+          "released": "2026-10-11",
+          "notes": ""
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.recyclebin.screenshot1.jpg",
+          "sha256": "ed857c06ae16510b9dd0731dadbcf723b90651c5242db07688ae3aeec1e95a9f",
+          "size": 37694
+        }
+      ]
+    },
+    {
       "id": "widgethost.stocks",
       "name": "持股看板",
       "nameEn": "Stock watchlist",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "台股、美股的即時股價、漲跌與當日走勢。輸入代號即可（上市、上櫃自動判斷），台股顯示中文名稱，紅漲綠跌可切換。股價來自 Yahoo 財經，只存代號，不存任何持股或成本資料。",
       "descriptionEn": "Live Taiwan and US stock prices with change and an intraday chart. Just enter the symbols; names are fetched automatically. Quotes come from Yahoo Finance. Only symbols are stored, never holdings or costs.",
       "homepage": "",
@@ -538,6 +640,15 @@
           "size": 38250,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.5.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks-1.5.0.widgetpkg",
+          "sha256": "d73f2c49cda7bf3c5f7410072f3c6f97142ca032404b6ff2f1d2893a57c2a408",
+          "size": 40005,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -552,7 +663,7 @@
       "id": "widgethost.sysmon",
       "name": "系統監視器",
       "nameEn": "System monitor",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "CPU、記憶體、網路上下行、磁碟讀寫、GPU、每核心使用率的即時數值與歷史曲線，每秒更新。只用 Windows 內建 API 與效能計數器，不需要系統管理員權限。",
       "descriptionEn": "Live CPU, memory, network, disk, GPU and per-core usage with history graphs or Rainmeter-style rings, updated every second.",
       "homepage": "",
@@ -611,6 +722,15 @@
           "size": 23149,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.4.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.4.0.widgetpkg",
+          "sha256": "13a6dda56a4484cf87e567869e987fab947a64da974ab7c0837cb37c3e7f905d",
+          "size": 25131,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -627,10 +747,49 @@
       ]
     },
     {
+      "id": "widgethost.volume",
+      "name": "音量切換",
+      "nameEn": "Volume switcher",
+      "author": "JunRongTsai",
+      "description": "主音量、靜音與輸出裝置（喇叭、耳機、螢幕）一鍵切換；也可以顯示麥克風並一鍵靜音。切換裝置、靜音、調音量都能指定全域快速鍵，用不到的裝置可以隱藏、改名。",
+      "descriptionEn": "Master volume, mute and one-click switching between outputs (speakers, headphones, monitors), plus an optional microphone row with one-click mute. Switching, muting and volume can all have global hotkeys; hide or rename devices you don't need.",
+      "homepage": "",
+      "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [
+          "audioOutput"
+        ],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "藍牙耳機要先連上才會出現在清單裡。切換預設裝置用的是 Windows 內部介面（EarTrumpet 等音訊工具也用同一個方法），日後的 Windows 更新有可能讓切換失效，音量與靜音不受影響。",
+        "notesEn": "Bluetooth headphones appear once they're connected. Switching the default device uses an internal Windows interface (the same one EarTrumpet and similar tools use), so a future Windows update could break switching; volume and mute aren't affected."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.volume-1.0.0.widgetpkg",
+          "sha256": "c13e07cbeb50083f490390c36e2beff9532e3c41211e31f81e6d3e5bf0e16e62",
+          "size": 32194,
+          "released": "2026-10-11",
+          "notes": ""
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.volume.screenshot1.jpg",
+          "sha256": "4fb247a1a75d5ab53c038533f421c3f6ffe95f6d011d82b1cdc6bcbd06832ed7",
+          "size": 40098
+        }
+      ]
+    },
+    {
       "id": "widgethost.weather",
       "name": "天氣",
       "nameEn": "Weather",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "目前天氣、接下來 6 小時與 3～7 天預報，內建台灣 22 縣市，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
       "descriptionEn": "Current weather, the next 6 hours and a 3–7 day forecast. Includes Taiwan's 22 cities and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
       "homepage": "",
@@ -658,6 +817,15 @@
           "size": 28711,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.1.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.1.0.widgetpkg",
+          "sha256": "52bca3c616e320f6e4b9909cf379f81cf6813eb1103d5098a0cf7f317887047b",
+          "size": 30585,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
@@ -672,7 +840,7 @@
       "id": "widgethost.worldclock",
       "name": "世界時鐘",
       "nameEn": "World clock",
-      "author": "markb",
+      "author": "JunRongTsai",
       "description": "多個時區並排顯示：和本地的時差、明天／昨天、白天／晚上。清單、橫排卡片或指針時鐘面三種樣式，時區用 Windows 內建清單，夏令時間自動換算。",
       "descriptionEn": "Several time zones side by side, with the time difference, tomorrow/yesterday and day/night. List, cards or analog clock faces; daylight saving time is handled by Windows.",
       "homepage": "",
@@ -685,6 +853,15 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock-1.0.0.widgetpkg",
           "sha256": "e98356b392882cae024470123364a8260a8350f16639cf710d98f1aaeb0c48be",
           "size": 19972,
+          "released": "2026-10-11",
+          "notes": ""
+        },
+        {
+          "version": "1.1.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock-1.1.0.widgetpkg",
+          "sha256": "100f1894e7743b67e443b8a7a8161660e5dce0d92731ffa01184bf36580e9e6f",
+          "size": 21799,
           "released": "2026-10-11",
           "notes": ""
         }
