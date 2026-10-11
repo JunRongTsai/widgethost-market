@@ -30,6 +30,15 @@
           "size": 33293,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.2.0.widgetpkg",
+          "sha256": "72d4390ee59fa394a1a8f5dbd01d9a1feeae9102d83ee57f113bd82bb17d8b52",
+          "size": 35147,
+          "released": "2026-10-11",
+          "notes": ""
         }
       ],
       "screenshots": [
