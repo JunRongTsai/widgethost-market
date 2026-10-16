@@ -1,7 +1,12 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-11",
+  "updated": "2026-10-17",
+  "host": {
+    "version": "1.4.3",
+    "url": "https://github.com/JunRongTsai/widgethost-market/releases/latest",
+    "notes": ""
+  },
   "plugins": [
     {
       "id": "widgethost.battery",
@@ -41,13 +46,22 @@
           "size": 37224,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.4.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.4.0.widgetpkg",
+          "sha256": "701836d00d7fd93bd3be367c62010d364db44e828cfea71f4bbdd08e4674eb1c",
+          "size": 44852,
+          "released": "2026-10-17",
+          "notes": "・多個實例共用同一次掃描與通知，同一個裝置只通知一次\n・Logitech 裝置離線時保留上次已知電量；同名的不同裝置分開顯示\n・電腦鎖定或螢幕關閉時暫停背景掃描\n・裝置頁隨掃描結果自動更新；筆電插電但沒充電時不算充電中\n・認得藍牙 LE 的 Logitech 裝置；淺色配色改用深色電量顏色"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery.screenshot1.jpg",
-          "sha256": "93d8daf5ed6f2df06c343ca743e4d1e32c5481b1c765288d4b5344902672c558",
-          "size": 46894
+          "sha256": "d070f907f1ccd64810c844f6b7a8f396ecccb6721b6d915a231e4be897478a0e",
+          "size": 53399
         }
       ]
     },
@@ -56,8 +70,8 @@
       "name": "農曆行事曆",
       "nameEn": "Lunar calendar",
       "author": "JunRongTsai",
-      "description": "月曆加農曆、二十四節氣、台灣節日，以及可自訂的倒數日（支援農曆生日、每年重複）。",
-      "descriptionEn": "A month calendar with Chinese lunar dates, the 24 solar terms, Taiwan holidays and custom countdowns.",
+      "description": "月曆加農曆、二十四節氣、台灣節日與依規則推算的補假，以及可自訂的倒數日（支援農曆生日、每年重複）。",
+      "descriptionEn": "A month calendar with Chinese lunar dates, the 24 solar terms, Taiwan holidays with calculated make-up days off, and custom countdowns.",
       "homepage": "",
       "capabilities": [],
       "requirements": null,
@@ -106,13 +120,22 @@
           "size": 23320,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.3.0.widgetpkg",
+          "sha256": "0b80189ab0262462d53e4617f4807db17f5d9d1913e07ae4c2cabde7f5f9a84c",
+          "size": 30700,
+          "released": "2026-10-17",
+          "notes": "・補上 2025 年新增的國定假日（小年夜、教師節、光復節、行憲紀念日）與補假推算，補假用較淡的顏色標示\n・不重複的倒數日改用日期挑選器；翻到別的月份後 60 秒自動回到本月\n・字高依螢幕 DPI、格子至少放得下兩行字、節日名稱不截字\n・一鍵配色連次要文字、週末、假日顏色一起換\n・設定檔單一欄位壞掉不再清空整份設定"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar.screenshot1.jpg",
-          "sha256": "065cbae2a9c4517b90a62d16fb5987e79d14efbed5d0f11e295f5e22beaaf5e1",
-          "size": 50917
+          "sha256": "70e94f96d95bf2525bbab6f5fb7ca5ef8ed4804b6695394e510a39a25e822b9d",
+          "size": 57811
         }
       ]
     },
@@ -171,6 +194,15 @@
           "size": 25515,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "3.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clock-3.2.0.widgetpkg",
+          "sha256": "4cd29ad724416dab9b8633a00397d705e9f13c5ce32975b1eafb60b6e342b476",
+          "size": 28591,
+          "released": "2026-10-17",
+          "notes": "・新增「時鐘語言」：跟隨介面、中文或 English\n・標籤與自訂格式可以打空白（New York、HH:mm 'Tokyo'）\n・系統時間或時區改變時立即跟上；匯入舊版設定先確認\n・陰影／光暈效能改善；回復預設值、匯入、快速鍵後三個設定分頁都同步\n・關掉日期時「顯示星期」改成灰掉並說明"
         }
       ],
       "screenshots": [
@@ -249,6 +281,15 @@
           "size": 6667575,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "2.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.3.0.widgetpkg",
+          "sha256": "cc669a6258e9915889fcfc7b0f0152168ca1a733114bc991132ddaf0d9035f67",
+          "size": 6672048,
+          "released": "2026-10-17",
+          "notes": "・媒體橫條出現或收起時頻譜固定不動，橫條往放置的方向長出\n・進度條暫停時不跳回、繼續時不多算暫停時間\n・設定頁各分頁在任何變更後一起更新；圓心空間不夠時改放下方橫條\n・安靜時放慢更新與擷取，更省電；沒有輸出裝置時不重複記錄\n・淺色配色：峰值與長條改用深色；不適用目前形狀的選項變灰"
         }
       ],
       "screenshots": [
@@ -352,18 +393,27 @@
           "size": 58398,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.5.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.5.0.widgetpkg",
+          "sha256": "c556330e7fea45163dafd57381157a598583fb4a4f2d54163192eb0de1a6870e",
+          "size": 72565,
+          "released": "2026-10-17",
+          "notes": "・放大方向依群組在螢幕上的位置自動決定\n・收納型：點外面、按 Esc、切到別的程式都會收起；雙擊小圓點不會誤開程式；設定頁可預覽展開的面板\n・可加入從開始功能表拖出的 Store App；新加入的資料夾預設堆疊、子資料夾展開成子選單\n・快速鍵綁定項目本身，排序或新增不會開錯程式；直排一直顯示名稱時點名稱也能啟動\n・高解析度螢幕上字型不再放大兩次；拖到縮放不同的螢幕會正確重畫；淺色配色改善"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher.screenshot1.jpg",
-          "sha256": "1815cf13d88c11207d0bfd9a321ae198f89c25f6f77310098b475e5aeeddec47",
-          "size": 59691
+          "sha256": "35c215b2db67c049cc16fb1f70ea64d0967e39b62c9af1eaeb45081a427b0395",
+          "size": 59592
         },
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher.screenshot2.jpg",
-          "sha256": "5bc3dec5a5921c2d93c292f3c1ee81534de26e3e5959b60e2fc4a9a01ef534b3",
-          "size": 39016
+          "sha256": "59398780deabc80103896427d30e61cd466399aa8659ebf2dbcd4cfafd497cb1",
+          "size": 38833
         }
       ]
     },
@@ -382,8 +432,8 @@
         "hardware": [],
         "optionalHardware": [],
         "networkHosts": [],
-        "notes": "內容存在 WidgetHost 的設定檔裡（純文字），請不要寫密碼等機密資料。",
-        "notesEn": "The text is stored in WidgetHost's settings file as plain text, so don't put passwords or other secrets in it."
+        "notes": "內容存在 WidgetHost 的設定檔裡（純文字），請不要寫密碼等機密資料。只有在你按「複製全部文字」時才會寫入剪貼簿，不會讀取或監看剪貼簿。",
+        "notesEn": "The text is stored in WidgetHost's settings file as plain text, so don't put passwords or other secrets in it. It only writes to the clipboard when you choose \"Copy all text\", and never reads or watches the clipboard."
       },
       "versions": [
         {
@@ -403,13 +453,22 @@
           "size": 18798,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.1.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes-1.1.0.widgetpkg",
+          "sha256": "0f682091efcdeb6286ea0f565703307bfe953f4b878f16bef8260e51f7e9be1b",
+          "size": 22769,
+          "released": "2026-10-17",
+          "notes": "・設定檔損壞時內容一定保留\n・自動長高固定上緣往下長，超出工作區才往上推\n・設定頁的內容框打到一半不會被蓋掉；編輯視窗只有真的改過才寫回\n・右鍵新增「復原上一次變更」；放不下時底部淡出並顯示還有幾項\n・點旁邊的小工具編輯視窗也會收起"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes.screenshot1.jpg",
-          "sha256": "c5495bef8043e503ace3be8e338da67bcd623e44337f8ea062a40586350a8d94",
-          "size": 39528
+          "sha256": "02b3786f43247abbf1ee2ebce16c5d405321b9b10ddf5659231e63b737c7bde3",
+          "size": 42086
         }
       ]
     },
@@ -418,8 +477,8 @@
       "name": "番茄鐘",
       "nameEn": "Pomodoro",
       "author": "JunRongTsai",
-      "description": "番茄鐘（專注／短休息／長休息自動輪替）、倒數計時器與碼表。環形進度、到點提示音、可指定全域快速鍵。",
-      "descriptionEn": "Pomodoro timer, countdown timer and stopwatch, with a progress ring, an alert sound and global hotkeys.",
+      "description": "番茄鐘（專注／短休息／長休息自動輪替）、倒數計時器與碼表。環形進度、到點提示音與通知、重新啟動後接續計時、可指定全域快速鍵。",
+      "descriptionEn": "Pomodoro timer, countdown timer and stopwatch, with a progress ring, an alert sound and notification, a timer that continues after a restart, and global hotkeys.",
       "homepage": "",
       "capabilities": [],
       "requirements": {
@@ -469,13 +528,22 @@
           "size": 18041,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.3.0.widgetpkg",
+          "sha256": "4327705bb0eacc1dc5d40acfc6486d6ea0817444d34b2ff9255345fe6b9d992e",
+          "size": 23429,
+          "released": "2026-10-17",
+          "notes": "・到點可顯示 Windows 通知（提示音與閃爍分開勾選）；隱藏或被全螢幕蓋住時照樣到點提醒\n・電腦鎖定時只通知，不響也不閃\n・重新啟動後接續計時；倒數到點停在 00:00 顯示「時間到」\n・右鍵選單整理（開始／暫停、重設、跳到下一階段、模式）；「今天完成 N 輪」跨日歸零"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro.screenshot1.jpg",
-          "sha256": "29e4f44121f85703eb3703e39edc90a5f7b7a5c1eca99fc056ad241d1a5f3861",
-          "size": 52555
+          "sha256": "deae0b735045908170497a2995142225b37664b8c86793d47fe61e80659eac37",
+          "size": 55499
         }
       ]
     },
@@ -508,13 +576,22 @@
           "size": 21031,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.1.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.recyclebin-1.1.0.widgetpkg",
+          "sha256": "6741a8c157eb46630e6553c0ed390ecd7d9c6db5e137612f36b24e1197bdd0bb",
+          "size": 24566,
+          "released": "2026-10-17",
+          "notes": "・清空前先在背景重查，用最新數字確認\n・預設 15 秒查一次；清空、拖放、開選單時立刻重查\n・選單「清空資源回收筒…」在空的時候變灰；按兩下只開一個視窗\n・清空與拖放失敗的通知有內文\n・中文標籤改用微軟正黑體；淺色配色下露出的紙是淺色"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.recyclebin.screenshot1.jpg",
-          "sha256": "ed857c06ae16510b9dd0731dadbcf723b90651c5242db07688ae3aeec1e95a9f",
-          "size": 37694
+          "sha256": "38c6a8eb8bd935a447901bcab35fa96a6bbf9224f19c16709f79590731333450",
+          "size": 40036
         }
       ]
     },
@@ -613,13 +690,22 @@
           "size": 40005,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.6.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks-1.6.0.widgetpkg",
+          "sha256": "8bbe3e411fca495318fef94135d8054429a720d49f194208ef69f5e9f45fda40",
+          "size": 45999,
+          "released": "2026-10-17",
+          "notes": "・隱藏或被全螢幕蓋住時，有到價提醒、正在交易的標的每 5 分鐘在背景檢查一次\n・抓不到的標的改用退避重試（60 秒起加倍）；Yahoo 限流時整批退避，頁尾看得出來\n・換日後走勢圖與盤後價不再消失；上櫃轉上市等代號自動重新判斷\n・淺色底板自動改用深色的漲跌色\n・到價提醒不再把代號、價格寫進記錄檔；精簡樣式不抓盤前盤後價"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks.screenshot1.jpg",
-          "sha256": "224049b2f76d39d972e6b0c9acce7981685ff5257f18c7dff3a2120121e246c9",
-          "size": 55955
+          "sha256": "8c81a68c98ffd2cbd802a12a83138cdca96a5a73335a619299abd4a336b7a2f1",
+          "size": 62058
         }
       ]
     },
@@ -628,8 +714,8 @@
       "name": "系統監視器",
       "nameEn": "System monitor",
       "author": "JunRongTsai",
-      "description": "CPU、記憶體、網路上下行、磁碟讀寫、GPU、每核心使用率的即時數值與歷史曲線，每秒更新。只用 Windows 內建 API 與效能計數器，不需要系統管理員權限。",
-      "descriptionEn": "Live CPU, memory, network, disk, GPU and per-core usage with history graphs or Rainmeter-style rings, updated every second.",
+      "description": "CPU、記憶體、網路上下行、磁碟讀寫、GPU、每個執行緒使用率的即時數值與歷史曲線，每秒更新。只用 Windows 內建 API 與效能計數器，不需要系統管理員權限。",
+      "descriptionEn": "Live CPU, memory, network, disk, GPU and per-thread usage with history graphs or Rainmeter-style rings, updated every second.",
       "homepage": "",
       "capabilities": [],
       "requirements": {
@@ -638,7 +724,7 @@
         "hardware": [],
         "optionalHardware": [],
         "networkHosts": [],
-        "notes": "GPU 使用率需要顯示卡驅動程式提供 Windows 效能計數器；虛擬機器或遠端桌面可能沒有這項數據。",
+        "notes": "GPU 使用率需要顯示卡驅動程式提供 Windows 效能計數器；虛擬機器或遠端桌面可能沒有這項資料。",
         "notesEn": "GPU usage needs the graphics driver to provide Windows performance counters; virtual machines and Remote Desktop may not have it."
       },
       "versions": [
@@ -695,18 +781,27 @@
           "size": 25131,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.5.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.5.0.widgetpkg",
+          "sha256": "07a16bcf0b7903d30d1493dbecb681c7bc47f561443cfb7737e360d953975ff9",
+          "size": 31795,
+          "released": "2026-10-17",
+          "notes": "・CPU 改用與工作管理員一致的算法；GPU 依顯示卡分開取最忙的一張\n・網路預設排除虛擬網卡（可勾選包含）；每張網卡各自計算，拔掉網卡不影響其他網卡\n・圓環不再每次啟動往左漂；啟動後不再顯示 0 B\n・只收集畫面上會顯示的項目，更省電；用不到的選項變灰並說明\n・圓環依螢幕 DPI 量尺寸；淺色配色改善"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon.screenshot1.jpg",
-          "sha256": "e2194e3bd70c27f4508734b9212c5dcd64656cab60150363e9ffc386cee8abf9",
-          "size": 57543
+          "sha256": "b7ccc52c601330feddc3638426aa0cf52cdbe2c2a29c41368b26b8983bfe8702",
+          "size": 62940
         },
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon.screenshot2.jpg",
-          "sha256": "e5d538cce72d26f347dc287099fbb9173b9553cf75e56a6057f4db3519f6d141",
-          "size": 37067
+          "sha256": "02320a1474e1b133b3afd0c96d52636e18a9f1d6cd06e5aba75a781060557c60",
+          "size": 41455
         }
       ]
     },
@@ -739,13 +834,22 @@
           "size": 32194,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.1.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.volume-1.1.0.widgetpkg",
+          "sha256": "4bcd09e93821e83d09ec994af35fbbf1504e9a4630f14b07ba64fc3709f8772a",
+          "size": 36683,
+          "released": "2026-10-17",
+          "notes": "・鎖定時點音量條或捲滾輪會閃一下紅色提示\n・快速鍵的通知合併成一則；靜音、音量快速鍵也會通知\n・拖曳中失去滑鼠不再亂改音量\n・右鍵選單加靜音、麥克風靜音；裝置分頁點名稱只改名、點方框才切換顯示\n・淺色底板的圓鈕與警示色改深色"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.volume.screenshot1.jpg",
-          "sha256": "4fb247a1a75d5ab53c038533f421c3f6ffe95f6d011d82b1cdc6bcbd06832ed7",
-          "size": 40098
+          "sha256": "6b6f38553a0cad6845199bc7b05557994c65f51b9751f8a4cf65d3751dedc72a",
+          "size": 42657
         }
       ]
     },
@@ -790,13 +894,22 @@
           "size": 30585,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.2.0.widgetpkg",
+          "sha256": "6b16e5e1cb0c7c9e28221eb6d3655862b96d033c3ba19f156835ed957d096d79",
+          "size": 36865,
+          "released": "2026-10-17",
+          "notes": "・台灣縣市直接搜得到（「台」「臺」都可以）；搜尋結果轉成繁體，不顯示「臺灣省」；可以自訂地點名稱\n・風速新增蒲福風級；「降雨」改成「今日降雨」\n・逐時預報與今天／明天改用地點的時區；快取太舊時標出資料時間\n・抓取逾時、重試與網路恢復後的處理改善\n・縣市下拉捲滾輪不會誤換；淺色底板上的降雨機率、警告改用深色"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather.screenshot1.jpg",
-          "sha256": "1ccc3b283e0b50340eea95a79bf8c6bdfab4774ed5115fa4bb37a2bc310588f6",
-          "size": 52022
+          "sha256": "cab4c96d09344ab5b0f73c14d914961944a8b8b906ca283e801452e9deb82b58",
+          "size": 55231
         }
       ]
     },
@@ -828,13 +941,22 @@
           "size": 21799,
           "released": "2026-10-11",
           "notes": ""
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock-1.2.0.widgetpkg",
+          "sha256": "75950d747cfff3ff4eb5e123fe8c1a9428890253fa5753260accb265ead9bf8b",
+          "size": 27416,
+          "released": "2026-10-17",
+          "notes": "・新增「每列幾個」（自動或 1～6）\n・常用城市依日出日落判斷白天／晚上\n・新增重複或已滿 12 個時先提示，不會默默刪掉\n・卡片與時鐘面依時間長度自動加寬；中文的上午／下午放在時間前面\n・系統時區改變時重新排版；淺色配色改用深色的太陽、月亮與次要文字"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock.screenshot1.jpg",
-          "sha256": "6a5fd85be0b0e46cf73751f9ec96083ff62023cd702035d4de78308a2bb7c20f",
-          "size": 49194
+          "sha256": "536d4f9c8886ebe7ea9b54755395a59e589b19fc52c31db59ca4102a3c0131f8",
+          "size": 51793
         }
       ]
     }
