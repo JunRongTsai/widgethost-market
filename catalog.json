@@ -9,6 +9,87 @@
   },
   "plugins": [
     {
+      "id": "widgethost.agenda",
+      "name": "今日行程",
+      "nameEn": "Agenda",
+      "author": "JunRongTsai",
+      "description": "讀行事曆訂閱連結（.ics），列出今天與接下來的行程並提前提醒。不用登入帳號。",
+      "descriptionEn": "Reads calendar subscription links (.ics) and lists today's and upcoming events with reminders. No account sign-in needed.",
+      "homepage": "",
+      "capabilities": [
+        "network"
+      ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "只連你自己填的行事曆網址（https 或 webcal），也可讀本機 .ics 檔。網址存在設定檔裡，拿到網址的人就能讀你的行事曆，請勿外流；網址與行程內容不會寫進記錄檔。行事曆內容快取在小工具的資料夾。",
+        "notesEn": "Connects only to the calendar addresses you enter (https or webcal) or reads local .ics files. The address is kept in the settings file; anyone who has it can read your calendar, so keep it private. Addresses and event details are never logged. Calendar data is cached locally."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.agenda-1.0.0.widgetpkg",
+          "sha256": "15ae4d2ac6b6f36f60f10bd59cc40af6c99b02649085a9460691fe30c9622d38",
+          "size": 50807,
+          "released": "2026-10-17",
+          "notes": "・新上架：貼上 Google、Outlook 等行事曆的 .ics 私人網址，列出今天與之後幾天的行程\n・進行中的行程高亮、「下一個還有幾分」，開始前通知\n・不用登入帳號；網址存在設定檔，請勿外流"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.agenda.screenshot1.jpg",
+          "sha256": "0d2c9d17f8f8394d5fbe2bcad74dff0607ba005fa1d3788f5c31c601ef4ef9d0",
+          "size": 52252
+        }
+      ]
+    },
+    {
+      "id": "widgethost.airquality",
+      "name": "空氣品質",
+      "nameEn": "Air quality",
+      "author": "JunRongTsai",
+      "description": "目前 AQI 與 PM2.5、PM10、臭氧等數值，過去 12 小時與未來 24 小時的每小時 AQI 長條圖，依等級變色、超過門檻可通知；內建台灣 22 縣市，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
+      "descriptionEn": "Current AQI with PM2.5, PM10 and ozone, plus an hourly AQI bar chart for the past 12 and next 24 hours, colored by level with optional alerts. Includes Taiwan's 22 cities and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
+      "homepage": "",
+      "capabilities": [
+        "network"
+      ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [
+          "air-quality-api.open-meteo.com",
+          "geocoding-api.open-meteo.com"
+        ],
+        "notes": "需要連得到 Open-Meteo（空氣品質資料與地名搜尋）；公司網路若封鎖這個網站就無法更新。資料以 CC BY 4.0 授權，免費服務僅限非商業用途。只會送出地點座標與搜尋的地名。",
+        "notesEn": "Needs access to Open-Meteo (air quality data and place search); it won't update if your network blocks the site. Data is licensed CC BY 4.0 and the free service is for non-commercial use. Only the coordinates and the search text are sent."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.airquality-1.0.0.widgetpkg",
+          "sha256": "4ef59228880615ca798e851471a497bb642c883709d13b01a5655915935aca63",
+          "size": 39993,
+          "released": "2026-10-17",
+          "notes": "・新上架：AQI 與 PM2.5、PM10、O₃，依等級配色（美國或歐洲標準）\n・過去與未來的每小時長條圖\n・內建台灣 22 縣市，也可搜尋地名；超過門檻時通知"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.airquality.screenshot1.jpg",
+          "sha256": "68c7ead7e9dda84d7bef28b9b9e7b4e69e0958d604572ae0866014c505ab8bf2",
+          "size": 79193
+        }
+      ]
+    },
+    {
       "id": "widgethost.battery",
       "name": "無線裝置電量",
       "nameEn": "Wireless battery",
@@ -136,6 +217,45 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar.screenshot1.jpg",
           "sha256": "70e94f96d95bf2525bbab6f5fb7ca5ef8ed4804b6695394e510a39a25e822b9d",
           "size": 57811
+        }
+      ]
+    },
+    {
+      "id": "widgethost.clipboard",
+      "name": "剪貼簿",
+      "nameEn": "Clipboard",
+      "author": "JunRongTsai",
+      "description": "上面是釘選的置頂項目，下面是最近複製過的文字與檔案清單，點一下就複製回剪貼簿。內容只存在記憶體裡，不寫入磁碟。",
+      "descriptionEn": "Pinned items on top, recently copied text and file lists below; click one to copy it back. Everything is kept in memory only and never written to disk.",
+      "homepage": "",
+      "capabilities": [
+        "clipboard"
+      ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "只監看文字與檔案清單，圖片等其他格式不記錄。所有內容只放在記憶體，絕不寫入磁碟（設定檔只存外觀與選項）；重開 WidgetHost 後置頂與最近都會清空，這是刻意的隱私設計。密碼管理員標示為機密的內容會自動略過，超過 200 KB 的文字也不記；暫停擷取或電腦鎖定時不記錄。不用鍵盤滑鼠勾子，只收剪貼簿變更通知。",
+        "notesEn": "Only text and file lists are watched; images are never recorded. Everything stays in memory and is never written to disk; pinned and recent items are cleared when WidgetHost restarts, by design. Content marked sensitive by password managers and text over 200 KB are skipped. No input hooks."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clipboard-1.0.0.widgetpkg",
+          "sha256": "6c97ce220bb36714d417b1d2820d066a287a160276a4503d1813e300683f5f36",
+          "size": 30459,
+          "released": "2026-10-17",
+          "notes": "・新上架：最近複製的文字與檔案，點一下就複製回去\n・常用的可以釘選置頂，不會被新內容擠掉；太長的一行用「…」\n・內容只放在記憶體、不寫入磁碟，重開就清空；密碼管理員標示機密的內容會略過"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clipboard.screenshot1.jpg",
+          "sha256": "c9cea00d20cfefdd3bab6c245c3e65bbe068a619592e0ff7af876a3c4bece4b2",
+          "size": 78690
         }
       ]
     },
@@ -301,6 +421,86 @@
       ]
     },
     {
+      "id": "widgethost.forex",
+      "name": "匯率看板",
+      "nameEn": "Exchange rates",
+      "author": "JunRongTsai",
+      "description": "美元、日圓等匯率與加密貨幣報價，含漲跌、走勢與到價提醒。資料來自 Yahoo 財經與 CoinGecko（免金鑰），Yahoo 連不上時改用 open.er-api.com 的每日匯率。",
+      "descriptionEn": "Exchange rates (USD, JPY, …) and crypto prices with change, sparkline and rate alerts. Data from Yahoo Finance and CoinGecko (no key needed); falls back to daily rates from open.er-api.com when Yahoo is unreachable.",
+      "homepage": "",
+      "capabilities": [
+        "network"
+      ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [
+          "query1.finance.yahoo.com",
+          "api.coingecko.com",
+          "open.er-api.com"
+        ],
+        "notes": "只會連 Yahoo 財經（匯率與當日走勢）、CoinGecko（加密貨幣價格）與 open.er-api.com（Yahoo 連不上時的每日匯率備援），全部 https、免金鑰。資料不是即時的：Yahoo 匯率可能延遲幾分鐘到十幾分鐘，CoinGecko 約每分鐘更新一次，備援匯率每天更新一次；僅供參考。只傳送幣別代碼，不傳送任何個人資料；最近一次的匯率會快取在小工具的資料夾，重開機先顯示上次的資料。看不見時不更新，但設了到價提醒時每 15 分鐘會背景檢查一次。",
+        "notesEn": "Connects only to Yahoo Finance (rates and intraday chart), CoinGecko (crypto prices) and open.er-api.com (daily-rate fallback when Yahoo is unreachable), all over https and without keys. Data is not real-time: Yahoo rates may be delayed by several minutes, CoinGecko updates about once a minute and the fallback once a day; for reference only. Only currency codes are sent, never personal data; the latest rates are cached in the widget's data folder so the last data is shown after a restart. No updates while hidden, except a background check every 15 minutes when rate alerts are set."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.forex-1.0.0.widgetpkg",
+          "sha256": "f0fbcd329942a4059e102f34fd40338357e2548c889c89fa151490be91b3320f",
+          "size": 42525,
+          "released": "2026-10-17",
+          "notes": "・新上架：美元、日圓等外幣對新台幣（或其他基準幣別）的匯率，含漲跌與當日走勢\n・可加比特幣等加密貨幣（CoinGecko）\n・到價提醒；Yahoo 財經連不上時改顯示每日匯率"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.forex.screenshot1.jpg",
+          "sha256": "8e92bbc128f061c9a2b46eb25765f3c73dfb785343e85d60c2184020186bccbe",
+          "size": 62449
+        }
+      ]
+    },
+    {
+      "id": "widgethost.health",
+      "name": "健康提醒",
+      "nameEn": "Health reminders",
+      "author": "JunRongTsai",
+      "description": "久坐、喝水、護眼 20-20-20 提醒；只在有在用電腦時計時，離開或鎖定就暫停。到點通知並可按完成或延後，記錄今天完成的次數。",
+      "descriptionEn": "Reminders to stand up, drink water and rest your eyes (20-20-20). The timers only run while you are using the computer; reminders notify you when due, can be marked done or snoozed, and today's counts are kept.",
+      "homepage": "",
+      "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "不連網。只讀「多久沒碰鍵盤滑鼠」（Windows 的 GetLastInputInfo）來判斷有沒有在用電腦，不裝鍵盤滑鼠勾子、不記錄按了什麼；電腦鎖定時視為離開。計時狀態與最近 30 天的每日完成次數只存在這個小工具的設定裡。",
+        "notesEn": "No network access. It only reads the time since the last keyboard or mouse input (GetLastInputInfo) to tell whether the computer is in use; no input hooks, nothing you type is recorded. A locked computer counts as away. Timer state and 30 days of daily counts live only in this widget's settings."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.health-1.0.0.widgetpkg",
+          "sha256": "088bda77e6c9e6c63b06a0494e748e9214820ce598adf858846a3b0a51a3b3b5",
+          "size": 32992,
+          "released": "2026-10-17",
+          "notes": "・新上架：久坐、喝水、護眼 20-20-20 提醒\n・沒在用電腦時暫停計時，離開或鎖定電腦後重新計時\n・可延後、安靜時段、只在週一到週五"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.health.screenshot1.jpg",
+          "sha256": "6751c3f02bd65958c86678f420fdeceeee317798130ee799f52db4059796240f",
+          "size": 52205
+        }
+      ]
+    },
+    {
       "id": "widgethost.launcher",
       "name": "應用程式群組",
       "nameEn": "App group",
@@ -418,6 +618,47 @@
       ]
     },
     {
+      "id": "widgethost.netquality",
+      "name": "連線品質",
+      "nameEn": "Connection quality",
+      "author": "JunRongTsai",
+      "description": "持續 ping 路由器、1.1.1.1 與你指定的目標：延遲曲線、平均／最大／抖動、封包遺失，加上 Wi-Fi 的 SSID、訊號、速率與頻段；斷線、恢復或遺失率偏高時通知。",
+      "descriptionEn": "Keeps pinging your router, 1.1.1.1 and hosts you choose: latency graph, average / max / jitter, packet loss, plus Wi-Fi SSID, signal, link speed and band, with alerts when the connection drops, recovers or loses too many packets.",
+      "homepage": "",
+      "capabilities": [
+        "network"
+      ],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [
+          "api.ipify.org"
+        ],
+        "notes": "ICMP ping 的目標由你指定（預設 1.1.1.1 與自動偵測的路由器，最多再加兩個），每個目標都會收到你送出的 ping。Wi-Fi 資訊來自 Windows 的 WLAN 服務，不會連網、不記錄 SSID。「顯示公網 IP」是選用功能、預設關閉；開啟後每 30 分鐘向 api.ipify.org 查詢一次，對方會看到你的位址。所有數字只放在記憶體、不寫入磁碟。",
+        "notesEn": "You choose the ICMP ping targets (1.1.1.1 and the auto-detected router by default, plus up to two more); each receives pings from your PC. Wi-Fi details come from the Windows WLAN service and are never logged. The optional public-IP display is off by default; when on it asks api.ipify.org every 30 minutes, which then sees your address."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.netquality-1.0.0.widgetpkg",
+          "sha256": "619f31f5aa1a87be65b770161cad467cde0029570e2b352b5fc6af8a515ca41f",
+          "size": 36049,
+          "released": "2026-10-17",
+          "notes": "・新上架：路由器與外網的延遲曲線、抖動、封包遺失\n・Wi-Fi 名稱、訊號、速率與頻段（沒有 Wi-Fi 時顯示有線網卡）\n・斷線、恢復與遺失率過高時通知；公網 IP 為選用（預設關）"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.netquality.screenshot1.jpg",
+          "sha256": "f372989b28c88c51b6202931f1f10b8e6b0b7d6f8781bfec90079078b2d20afd",
+          "size": 62991
+        }
+      ]
+    },
+    {
       "id": "widgethost.notes",
       "name": "便利貼",
       "nameEn": "Sticky notes",
@@ -469,6 +710,43 @@
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes.screenshot1.jpg",
           "sha256": "02b3786f43247abbf1ee2ebce16c5d405321b9b10ddf5659231e63b737c7bde3",
           "size": 42086
+        }
+      ]
+    },
+    {
+      "id": "widgethost.photoframe",
+      "name": "相框",
+      "nameEn": "Photo frame",
+      "author": "JunRongTsai",
+      "description": "輪播指定資料夾裡的照片，可設間隔、順序、相框樣式與淡入淡出。",
+      "descriptionEn": "Slideshow of the photos in a folder of your choice, with interval, order, frame style and crossfade.",
+      "homepage": "",
+      "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "只讀取你在設定裡選的那個資料夾（可含子資料夾），資料夾路徑存在設定檔裡；不連網、不寫入任何檔案，記錄檔不記檔名。支援 jpg、png、bmp、gif（第一格）、tif；webp 與 heic 不支援。",
+        "notesEn": "Reads only the folder you pick in Settings (optionally with subfolders); the folder path is stored in the settings file. No network access, nothing is written to disk, and file names are never logged. Supports jpg, png, bmp, gif (first frame) and tif; webp and heic are not supported."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.photoframe-1.0.0.widgetpkg",
+          "sha256": "16300b82d892b4d761ae8fc043becbf94a5f53ea4ea9aedcaf17e566d4b6ed5e",
+          "size": 32949,
+          "released": "2026-10-17",
+          "notes": "・新上架：輪播你選的資料夾裡的照片（可含子資料夾）\n・自動轉正手機直拍的照片、淡入淡出、拍立得樣式\n・滑鼠移上去有上一張／暫停／下一張"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.photoframe.screenshot1.jpg",
+          "sha256": "63eb6137fa543e887a7a1bb27c7347218ae14b528cce7c3ff1650d0c062a4c45",
+          "size": 48933
         }
       ]
     },
@@ -548,6 +826,43 @@
       ]
     },
     {
+      "id": "widgethost.power",
+      "name": "電源小幫手",
+      "nameEn": "Power helper",
+      "author": "JunRongTsai",
+      "description": "一排圓形按鈕：保持清醒（防睡眠、防關螢幕，可設時長）、關閉螢幕、鎖定、睡眠、休眠、關機與重新啟動；狀態列顯示電源計畫與電池電量，右鍵切換電源計畫。不連網、不讀寫檔案。",
+      "descriptionEn": "A row of round buttons: keep awake (no sleep or screen-off, with a timer), screen off, lock, sleep, hibernate, shut down and restart. The status line shows the power plan and battery; switch plans from the right-click menu. No network or file access.",
+      "homepage": "",
+      "capabilities": [],
+      "requirements": {
+        "minWindowsBuild": 0,
+        "architectures": [],
+        "hardware": [],
+        "optionalHardware": [],
+        "networkHosts": [],
+        "notes": "關機與重新啟動一定會先問你，確認後 30 秒才執行，期間可以取消；睡眠、休眠前要不要確認可在設定裡選。保持清醒不跨重新啟動保存，關掉主程式或重新開機就恢復平常的電源設定。休眠要 Windows 有啟用才會出現。",
+        "notesEn": "Shut down and Restart always ask first and wait 30 seconds, so you can cancel. Whether Sleep and Hibernate ask is up to you. Keep-awake isn't saved across restarts: closing WidgetHost or restarting restores your usual power settings. Hibernate appears only if Windows has it enabled."
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.power-1.0.0.widgetpkg",
+          "sha256": "4e013e5ece6a2b5d93c98f67839370c638e430df8683beb8e2f861b2c6dcee66",
+          "size": 33575,
+          "released": "2026-10-17",
+          "notes": "・新上架：保持清醒（可設時長，到期自動關閉並通知）、關閉螢幕、鎖定、睡眠、休眠\n・關機與重新啟動一定先確認，30 秒內可取消\n・顯示電源計畫與電池，右鍵可切換電源計畫"
+        }
+      ],
+      "screenshots": [
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.power.screenshot1.jpg",
+          "sha256": "954703612d95ad88e03b2c9c2bea59dd50419a6219bc3d19bcc8c8b210a35ada",
+          "size": 44524
+        }
+      ]
+    },
+    {
       "id": "widgethost.recyclebin",
       "name": "資源回收筒",
       "nameEn": "Recycle Bin",
@@ -585,13 +900,22 @@
           "size": 24566,
           "released": "2026-10-17",
           "notes": "・清空前先在背景重查，用最新數字確認\n・預設 15 秒查一次；清空、拖放、開選單時立刻重查\n・選單「清空資源回收筒…」在空的時候變灰；按兩下只開一個視窗\n・清空與拖放失敗的通知有內文\n・中文標籤改用微軟正黑體；淺色配色下露出的紙是淺色"
+        },
+        {
+          "version": "1.1.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.recyclebin-1.1.1.widgetpkg",
+          "sha256": "7600931999b76f52802ca64aee17e493f131dfc26925ead6999f0a551e4c5877",
+          "size": 24605,
+          "released": "2026-10-17",
+          "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.recyclebin.screenshot1.jpg",
-          "sha256": "38c6a8eb8bd935a447901bcab35fa96a6bbf9224f19c16709f79590731333450",
-          "size": 40036
+          "sha256": "c3ef0c1d93f2b73512e7b08bed620598489f102593ab30f4ce6d255292c65184",
+          "size": 42132
         }
       ]
     },
@@ -699,13 +1023,22 @@
           "size": 45999,
           "released": "2026-10-17",
           "notes": "・隱藏或被全螢幕蓋住時，有到價提醒、正在交易的標的每 5 分鐘在背景檢查一次\n・抓不到的標的改用退避重試（60 秒起加倍）；Yahoo 限流時整批退避，頁尾看得出來\n・換日後走勢圖與盤後價不再消失；上櫃轉上市等代號自動重新判斷\n・淺色底板自動改用深色的漲跌色\n・到價提醒不再把代號、價格寫進記錄檔；精簡樣式不抓盤前盤後價"
+        },
+        {
+          "version": "1.6.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks-1.6.1.widgetpkg",
+          "sha256": "b375d567b83835e3be6342861a6b3f63ac39b2a58928080aab45d6846eb5c6bf",
+          "size": 46031,
+          "released": "2026-10-17",
+          "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks.screenshot1.jpg",
-          "sha256": "8c81a68c98ffd2cbd802a12a83138cdca96a5a73335a619299abd4a336b7a2f1",
-          "size": 62058
+          "sha256": "5939a9eb128e41cce055571afaeae4425590bc0d5322bfd6ecf52a041b301916",
+          "size": 62721
         }
       ]
     },
@@ -843,13 +1176,22 @@
           "size": 36683,
           "released": "2026-10-17",
           "notes": "・鎖定時點音量條或捲滾輪會閃一下紅色提示\n・快速鍵的通知合併成一則；靜音、音量快速鍵也會通知\n・拖曳中失去滑鼠不再亂改音量\n・右鍵選單加靜音、麥克風靜音；裝置分頁點名稱只改名、點方框才切換顯示\n・淺色底板的圓鈕與警示色改深色"
+        },
+        {
+          "version": "1.1.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.volume-1.1.1.widgetpkg",
+          "sha256": "8db13749888485ca9722b3f0ed3a6ed6fe40f3451ab57645c9d16993cd46fbc6",
+          "size": 36735,
+          "released": "2026-10-17",
+          "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.volume.screenshot1.jpg",
-          "sha256": "6b6f38553a0cad6845199bc7b05557994c65f51b9751f8a4cf65d3751dedc72a",
-          "size": 42657
+          "sha256": "acb64a4b32a11d3ae4f5da1ea6f2695de38e9b7d35e3d6ba836963f053bfb7fa",
+          "size": 42777
         }
       ]
     },
@@ -903,13 +1245,22 @@
           "size": 36865,
           "released": "2026-10-17",
           "notes": "・台灣縣市直接搜得到（「台」「臺」都可以）；搜尋結果轉成繁體，不顯示「臺灣省」；可以自訂地點名稱\n・風速新增蒲福風級；「降雨」改成「今日降雨」\n・逐時預報與今天／明天改用地點的時區；快取太舊時標出資料時間\n・抓取逾時、重試與網路恢復後的處理改善\n・縣市下拉捲滾輪不會誤換；淺色底板上的降雨機率、警告改用深色"
+        },
+        {
+          "version": "1.2.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.2.1.widgetpkg",
+          "sha256": "9b60eee5202db5a83bb0ea23cfc1f91b57bd932856046f6ae6fc96b532827da9",
+          "size": 36878,
+          "released": "2026-10-17",
+          "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather.screenshot1.jpg",
-          "sha256": "cab4c96d09344ab5b0f73c14d914961944a8b8b906ca283e801452e9deb82b58",
-          "size": 55231
+          "sha256": "d62100c3b0c0bd10d791da48a2ca80f7fbe1a9c6cc2967cadbc9cb789dd2dfce",
+          "size": 58318
         }
       ]
     },
@@ -950,13 +1301,22 @@
           "size": 27416,
           "released": "2026-10-17",
           "notes": "・新增「每列幾個」（自動或 1～6）\n・常用城市依日出日落判斷白天／晚上\n・新增重複或已滿 12 個時先提示，不會默默刪掉\n・卡片與時鐘面依時間長度自動加寬；中文的上午／下午放在時間前面\n・系統時區改變時重新排版；淺色配色改用深色的太陽、月亮與次要文字"
+        },
+        {
+          "version": "1.2.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock-1.2.1.widgetpkg",
+          "sha256": "111e20dafc2c86505763b8135c07daa7dad26e3ec4dd1792cc51815390a6ccbc",
+          "size": 27474,
+          "released": "2026-10-17",
+          "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock.screenshot1.jpg",
-          "sha256": "536d4f9c8886ebe7ea9b54755395a59e589b19fc52c31db59ca4102a3c0131f8",
-          "size": 51793
+          "sha256": "2528d7b174023c7d9b9cc098e077e94ae26ce5f8585005d3509a85769afad48b",
+          "size": 51880
         }
       ]
     }
