@@ -1,9 +1,9 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "host": {
-    "version": "1.4.3",
+    "version": "1.4.4",
     "url": "https://github.com/JunRongTsai/widgethost-market/releases/latest",
     "notes": ""
   },
@@ -37,6 +37,15 @@
           "size": 50807,
           "released": "2026-10-17",
           "notes": "・新上架：貼上 Google、Outlook 等行事曆的 .ics 私人網址，列出今天與之後幾天的行程\n・進行中的行程高亮、「下一個還有幾分」，開始前通知\n・不用登入帳號；網址存在設定檔，請勿外流"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.agenda-1.0.1.widgetpkg",
+          "sha256": "f3aa96cfa769f457f86f427cd1d1b8fb291f3f9243f201d8eb9a6eaa1c37da6c",
+          "size": 51185,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -79,6 +88,15 @@
           "size": 39993,
           "released": "2026-10-17",
           "notes": "・新上架：AQI 與 PM2.5、PM10、O₃，依等級配色（美國或歐洲標準）\n・過去與未來的每小時長條圖\n・內建台灣 22 縣市，也可搜尋地名；超過門檻時通知"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.airquality-1.0.1.widgetpkg",
+          "sha256": "4bf59d73aadb10c44b232d3eada891fb08d91b1f7cac01d5a38e01a3c59f6514",
+          "size": 40308,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -136,6 +154,15 @@
           "size": 44852,
           "released": "2026-10-17",
           "notes": "・多個實例共用同一次掃描與通知，同一個裝置只通知一次\n・Logitech 裝置離線時保留上次已知電量；同名的不同裝置分開顯示\n・電腦鎖定或螢幕關閉時暫停背景掃描\n・裝置頁隨掃描結果自動更新；筆電插電但沒充電時不算充電中\n・認得藍牙 LE 的 Logitech 裝置；淺色配色改用深色電量顏色"
+        },
+        {
+          "version": "1.4.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.battery-1.4.1.widgetpkg",
+          "sha256": "32e2ef21c6b1d3602a0826140ce8578e2a0250d042018a5c035439f67dea01ff",
+          "size": 45174,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -210,6 +237,15 @@
           "size": 30700,
           "released": "2026-10-17",
           "notes": "・補上 2025 年新增的國定假日（小年夜、教師節、光復節、行憲紀念日）與補假推算，補假用較淡的顏色標示\n・不重複的倒數日改用日期挑選器；翻到別的月份後 60 秒自動回到本月\n・字高依螢幕 DPI、格子至少放得下兩行字、節日名稱不截字\n・一鍵配色連次要文字、週末、假日顏色一起換\n・設定檔單一欄位壞掉不再清空整份設定"
+        },
+        {
+          "version": "1.3.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.3.1.widgetpkg",
+          "sha256": "2317956c1a4ad6db5a0b96e48545a8af0fdf80e3bca43db1817b4fea7279961a",
+          "size": 31167,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -249,6 +285,15 @@
           "size": 30459,
           "released": "2026-10-17",
           "notes": "・新上架：最近複製的文字與檔案，點一下就複製回去\n・常用的可以釘選置頂，不會被新內容擠掉；太長的一行用「…」\n・內容只放在記憶體、不寫入磁碟，重開就清空；密碼管理員標示機密的內容會略過"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clipboard-1.0.1.widgetpkg",
+          "sha256": "e41e9137790a3a1d3e4819986fc5a9029dd9311841743464c9ef224fe10db2de",
+          "size": 30821,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -410,6 +455,15 @@
           "size": 6672048,
           "released": "2026-10-17",
           "notes": "・媒體橫條出現或收起時頻譜固定不動，橫條往放置的方向長出\n・進度條暫停時不跳回、繼續時不多算暫停時間\n・設定頁各分頁在任何變更後一起更新；圓心空間不夠時改放下方橫條\n・安靜時放慢更新與擷取，更省電；沒有輸出裝置時不重複記錄\n・淺色配色：峰值與長條改用深色；不適用目前形狀的選項變灰"
+        },
+        {
+          "version": "2.3.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.3.1.widgetpkg",
+          "sha256": "4b005ad4d1fee6e9a1503b5e73028b770ae3b953bb052e50b4cca663063048af",
+          "size": 6672271,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -453,6 +507,15 @@
           "size": 42525,
           "released": "2026-10-17",
           "notes": "・新上架：美元、日圓等外幣對新台幣（或其他基準幣別）的匯率，含漲跌與當日走勢\n・可加比特幣等加密貨幣（CoinGecko）\n・到價提醒；Yahoo 財經連不上時改顯示每日匯率"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.forex-1.0.1.widgetpkg",
+          "sha256": "330a364467a88232f40e6294a9596df5fc6210f438e5d411b94fd971db3ca988",
+          "size": 43065,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -490,6 +553,15 @@
           "size": 32992,
           "released": "2026-10-17",
           "notes": "・新上架：久坐、喝水、護眼 20-20-20 提醒\n・沒在用電腦時暫停計時，離開或鎖定電腦後重新計時\n・可延後、安靜時段、只在週一到週五"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.health-1.0.1.widgetpkg",
+          "sha256": "97542bb63246830bd2382e4743e2277efcfed1d14a72cb4a0bc2cc519f2a243c",
+          "size": 33520,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -602,6 +674,15 @@
           "size": 72565,
           "released": "2026-10-17",
           "notes": "・放大方向依群組在螢幕上的位置自動決定\n・收納型：點外面、按 Esc、切到別的程式都會收起；雙擊小圓點不會誤開程式；設定頁可預覽展開的面板\n・可加入從開始功能表拖出的 Store App；新加入的資料夾預設堆疊、子資料夾展開成子選單\n・快速鍵綁定項目本身，排序或新增不會開錯程式；直排一直顯示名稱時點名稱也能啟動\n・高解析度螢幕上字型不再放大兩次；拖到縮放不同的螢幕會正確重畫；淺色配色改善"
+        },
+        {
+          "version": "1.5.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.5.1.widgetpkg",
+          "sha256": "c47768eafccff769bdbe16056655386c83692ac9300d3360cfbd7a66b5d0e942",
+          "size": 73028,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -648,6 +729,15 @@
           "size": 36049,
           "released": "2026-10-17",
           "notes": "・新上架：路由器與外網的延遲曲線、抖動、封包遺失\n・Wi-Fi 名稱、訊號、速率與頻段（沒有 Wi-Fi 時顯示有線網卡）\n・斷線、恢復與遺失率過高時通知；公網 IP 為選用（預設關）"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.netquality-1.0.1.widgetpkg",
+          "sha256": "dd8e55c8e657abd1a6a03987d03ffb09b8d71be44858cce97babd0c6eccad360",
+          "size": 36460,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -740,6 +830,15 @@
           "size": 32949,
           "released": "2026-10-17",
           "notes": "・新上架：輪播你選的資料夾裡的照片（可含子資料夾）\n・自動轉正手機直拍的照片、淡入淡出、拍立得樣式\n・滑鼠移上去有上一張／暫停／下一張"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.photoframe-1.0.1.widgetpkg",
+          "sha256": "b1e33f0624b2873e94d552813d59fcb0f0145a54cb7c7c0e4e4fbf96062f182a",
+          "size": 33521,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -815,6 +914,15 @@
           "size": 23429,
           "released": "2026-10-17",
           "notes": "・到點可顯示 Windows 通知（提示音與閃爍分開勾選）；隱藏或被全螢幕蓋住時照樣到點提醒\n・電腦鎖定時只通知，不響也不閃\n・重新啟動後接續計時；倒數到點停在 00:00 顯示「時間到」\n・右鍵選單整理（開始／暫停、重設、跳到下一階段、模式）；「今天完成 N 輪」跨日歸零"
+        },
+        {
+          "version": "1.3.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.3.1.widgetpkg",
+          "sha256": "2d6821c5a93be5c1e0e023dbebb4edd418e0ed0b9cb05e41d66ea01f2e4eaa13",
+          "size": 23888,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -852,6 +960,15 @@
           "size": 33575,
           "released": "2026-10-17",
           "notes": "・新上架：保持清醒（可設時長，到期自動關閉並通知）、關閉螢幕、鎖定、睡眠、休眠\n・關機與重新啟動一定先確認，30 秒內可取消\n・顯示電源計畫與電池，右鍵可切換電源計畫"
+        },
+        {
+          "version": "1.0.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.power-1.0.1.widgetpkg",
+          "sha256": "2623dd6d01ac22f0c371eb7847a63674493b78ecca318349e07a7375f72c247c",
+          "size": 34125,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -909,6 +1026,15 @@
           "size": 24605,
           "released": "2026-10-17",
           "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
+        },
+        {
+          "version": "1.1.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.recyclebin-1.1.2.widgetpkg",
+          "sha256": "78b048a20e1c68ca6feb8b3f0183c275f9b5eac46d1a918b8ec10a694565dabc",
+          "size": 25105,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -1032,6 +1158,15 @@
           "size": 46031,
           "released": "2026-10-17",
           "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
+        },
+        {
+          "version": "1.6.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks-1.6.2.widgetpkg",
+          "sha256": "cf8ac80c92590ab20cfa68daacc5f1b6e41ef20660fbb1ea38e8cc192967e05f",
+          "size": 46497,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -1123,6 +1258,15 @@
           "size": 31795,
           "released": "2026-10-17",
           "notes": "・CPU 改用與工作管理員一致的算法；GPU 依顯示卡分開取最忙的一張\n・網路預設排除虛擬網卡（可勾選包含）；每張網卡各自計算，拔掉網卡不影響其他網卡\n・圓環不再每次啟動往左漂；啟動後不再顯示 0 B\n・只收集畫面上會顯示的項目，更省電；用不到的選項變灰並說明\n・圓環依螢幕 DPI 量尺寸；淺色配色改善"
+        },
+        {
+          "version": "1.5.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.5.1.widgetpkg",
+          "sha256": "cee7f414e5f0d70f6cf3a0bfea9efc9058b36698a300f4e918a3bed2eecfa3d7",
+          "size": 32166,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -1185,6 +1329,15 @@
           "size": 36735,
           "released": "2026-10-17",
           "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
+        },
+        {
+          "version": "1.1.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.volume-1.1.2.widgetpkg",
+          "sha256": "004e383a098bf33ef7fabccc681003668ba211234d7225af7cfd3740c0a24198",
+          "size": 37298,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -1254,6 +1407,15 @@
           "size": 36878,
           "released": "2026-10-17",
           "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
+        },
+        {
+          "version": "1.2.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.2.2.widgetpkg",
+          "sha256": "fe1ab91ae3228958c38d1dec15f62b43ef1ee81f4f30965ad3e411e8122dfb34",
+          "size": 37223,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
@@ -1310,6 +1472,15 @@
           "size": 27474,
           "released": "2026-10-17",
           "notes": "・放到縮放比例不同的副螢幕（例如主螢幕 125%、副螢幕 150%）時，行高改用那台螢幕的縮放計算，文字不再擠在一起或被切掉"
+        },
+        {
+          "version": "1.2.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock-1.2.2.widgetpkg",
+          "sha256": "af57d624c17555fd1e7e8b018335c96f662efc60ae43d119b5ddc003393f9321",
+          "size": 27923,
+          "released": "2026-10-18",
+          "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
         }
       ],
       "screenshots": [
