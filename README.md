@@ -11,9 +11,10 @@ Windows 的桌面小工具中心：時鐘、系統監視器、行事曆、持股
 |---|---|---|
 | `WidgetHost-<版本>-minimal.zip` | 約 0.2 MB | 只有主程式。第一次啟動會打開市集，挑需要的小工具安裝 |
 | `WidgetHost-<版本>-full.zip` | 約 7 MB | 含全部小工具。公司網路連不到 GitHub 時用這個 |
+| `WidgetHost-<版本>-standalone.zip` | 約 53 MB | 免安裝版：含全部小工具＋ .NET 10 執行環境。電腦沒有 .NET 10、或沒有系統管理員權限時用這個 |
 
 **需要的環境**：Windows 10（1809 以上）或 Windows 11，x64；
-[.NET 10 桌面執行階段](https://aka.ms/dotnet/10.0/windowsdesktop-runtime-win-x64.exe)（安裝它需要系統管理員權限，公司電腦請洽 IT）。
+[.NET 10 桌面執行階段](https://aka.ms/dotnet/10.0/windowsdesktop-runtime-win-x64.exe)（安裝它需要系統管理員權限，公司電腦請洽 IT；用免安裝版就不需要）。
 
 **安裝**：
 
@@ -70,5 +71,5 @@ git add -A && git commit -m "..." && git push
 
 ```
 build.cmd dist
-gh release create v<版本> dist\WidgetHost-<版本>-minimal.zip dist\WidgetHost-<版本>-full.zip --repo JunRongTsai/widgethost-market --title "WidgetHost <版本>" --notes-file <說明檔>
+gh release create v<版本> dist\WidgetHost-<版本>-minimal.zip dist\WidgetHost-<版本>-full.zip dist\WidgetHost-<版本>-standalone.zip --repo JunRongTsai/widgethost-market --title "WidgetHost <版本>" --notes-file <說明檔>
 ```

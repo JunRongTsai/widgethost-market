@@ -1,9 +1,9 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "host": {
-    "version": "1.4.4",
+    "version": "1.4.5",
     "url": "https://github.com/JunRongTsai/widgethost-market/releases/latest",
     "notes": ""
   },
@@ -464,6 +464,15 @@
           "size": 6672271,
           "released": "2026-10-18",
           "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
+        },
+        {
+          "version": "2.3.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.3.2.widgetpkg",
+          "sha256": "721faeac5065eeba89ebe89695e798b5a1f190b917a308d676711ace7e80f24d",
+          "size": 6672406,
+          "released": "2026-10-19",
+          "notes": "・開機時出現得更快：音訊裝置與媒體資訊的初始化排到小工具都顯示之後再做（長條與正在播放晚一下才出現）"
         }
       ],
       "screenshots": [
@@ -818,8 +827,8 @@
         "hardware": [],
         "optionalHardware": [],
         "networkHosts": [],
-        "notes": "只讀取你在設定裡選的那個資料夾（可含子資料夾），資料夾路徑存在設定檔裡；不連網、不寫入任何檔案，記錄檔不記檔名。支援 jpg、png、bmp、gif（第一格）、tif；webp 與 heic 不支援。",
-        "notesEn": "Reads only the folder you pick in Settings (optionally with subfolders); the folder path is stored in the settings file. No network access, nothing is written to disk, and file names are never logged. Supports jpg, png, bmp, gif (first frame) and tif; webp and heic are not supported."
+        "notes": "只讀取你在設定裡選的那個資料夾（可含子資料夾），資料夾路徑存在設定檔裡；不連網、不寫入任何檔案，記錄檔不記檔名。支援 jpg、png、bmp、gif（會動的照樣播放）、tif；webp 與 heic 不支援。",
+        "notesEn": "Reads only the folder you pick in Settings (optionally with subfolders); the folder path is stored in the settings file. No network access, nothing is written to disk, and file names are never logged. Supports jpg, png, bmp, gif (animated ones play) and tif; webp and heic are not supported."
       },
       "versions": [
         {
@@ -839,6 +848,15 @@
           "size": 33521,
           "released": "2026-10-18",
           "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
+        },
+        {
+          "version": "1.1.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.photoframe-1.1.0.widgetpkg",
+          "sha256": "90e7dba797ef7925e3d0568e2d4b7273c22667d00d592292508e40e10a523709",
+          "size": 35509,
+          "released": "2026-10-19",
+          "notes": "・會動的 GIF 照樣播放：每一格停多久照 GIF 檔案的設定，GIF 只設定播幾次的播完就停在最後一格\n・所有畫格最多佔 64 MB 記憶體，超過就縮小畫格，還不夠才只顯示第一格\n・小工具看不見時停止播放並釋放記憶體\n・設定頁「輪播」可以關掉「播放會動的 GIF」"
         }
       ],
       "screenshots": [
@@ -1267,6 +1285,15 @@
           "size": 32166,
           "released": "2026-10-18",
           "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
+        },
+        {
+          "version": "1.5.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.sysmon-1.5.2.widgetpkg",
+          "sha256": "77a5bf7f5c1c316ddf4009be21667d9cbc340f62fc6f9f7f2c990b7ec5213807",
+          "size": 32816,
+          "released": "2026-10-19",
+          "notes": "・開機時出現得更快：效能計數器的設定與第一次取樣改在背景做，不再卡住其他小工具出現"
         }
       ],
       "screenshots": [
