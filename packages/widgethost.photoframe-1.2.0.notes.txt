@@ -1,0 +1,2 @@
+・支援 webp、heic、heif、avif（用 Windows 內建的影像解碼器）；手機拍的 heic 照片可以直接放
+・沒裝對應的解碼器時那些照片會被略過，設定頁會提示要從 Microsoft Store 裝哪個延伸模組

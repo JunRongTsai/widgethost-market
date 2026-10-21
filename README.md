@@ -9,7 +9,7 @@ Windows 的桌面小工具中心：時鐘、系統監視器、行事曆、持股
 
 | 檔案 | 大小 | 說明 |
 |---|---|---|
-| `WidgetHost-<版本>-minimal.zip` | 約 0.2 MB | 只有主程式。第一次啟動會打開市集，挑需要的小工具安裝 |
+| `WidgetHost-<版本>-minimal.zip` | 約 0.4 MB | 只有主程式。第一次啟動會打開市集，挑需要的小工具安裝 |
 | `WidgetHost-<版本>-full.zip` | 約 7 MB | 含全部小工具。公司網路連不到 GitHub 時用這個 |
 | `WidgetHost-<版本>-standalone.zip` | 約 53 MB | 免安裝版：含全部小工具＋ .NET 10 執行環境。電腦沒有 .NET 10、或沒有系統管理員權限時用這個 |
 
