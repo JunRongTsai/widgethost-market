@@ -874,6 +874,15 @@
           "size": 25721,
           "released": "2026-10-22",
           "notes": "・打勾完成的待辦自動沉到那一段的底部，取消勾選移回來（設定頁可關）\n・待辦項目可以拖到另一張便利貼（按住 Ctrl 是複製）；從其他程式拖文字進來會加在末尾"
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes-1.3.0.widgetpkg",
+          "sha256": "fd4b5cb5a7fadd461ef640ba1ed185b1a5158b91f15742cc484e5d629fea2a6c",
+          "size": 26315,
+          "released": "2026-10-22",
+          "notes": "・新增「清單模式」（設定→外觀）：每一行就是一個待辦項目，按 Enter 換下一項，不必打「- [ ] 」；畫面上自動折行的不算新的一項\n・清單模式編輯時只看到文字，完成的項目以「✓ 」開頭；打開時把現有每一行轉成待辦"
         }
       ],
       "screenshots": [
@@ -1498,8 +1507,8 @@
       "name": "天氣",
       "nameEn": "Weather",
       "author": "JunRongTsai",
-      "description": "目前天氣、接下來 6 小時與 3～7 天預報，內建台灣 22 縣市，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
-      "descriptionEn": "Current weather, the next 6 hours and a 3–7 day forecast. Includes Taiwan's 22 cities and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
+      "description": "目前天氣、接下來 6 小時與 3～7 天預報，內建台灣 22 縣市與 368 個鄉鎮市區，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
+      "descriptionEn": "Current weather, the next 6 hours and a 3–7 day forecast. Includes Taiwan's 22 cities and 368 districts and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
       "homepage": "",
       "capabilities": [
         "network"
@@ -1570,13 +1579,22 @@
           "size": 39060,
           "released": "2026-10-22",
           "notes": "・網路抓取改用與其他小工具共用的程式碼（規則相同：只連 Open-Meteo、12 秒逾時、回應大小上限），行為不變"
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.3.0.widgetpkg",
+          "sha256": "a76b39116ffcd1a0d0167f2b9e41d9f4e9f1e99580bfb8ba65d199aced3e53ad",
+          "size": 50315,
+          "released": "2026-10-22",
+          "notes": "・選完台灣縣市可以再選鄉鎮市區（內建全台 368 區），天氣就抓那一區的座標\n・搜尋地名的結果括弧改顯示縣市與鄉鎮（例如「中壢（桃園市，中壢區，台灣）」），同名的地方分得出來"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather.screenshot1.jpg",
-          "sha256": "c8cf5273f69e192c921180973b2a349efe7ddd0e62e1f42001533397b11d1cae",
-          "size": 61018
+          "sha256": "35358e4bb0d0c93745f82f91b60ee83f2b9a23069a5052664ca7cae9bb4edda3",
+          "size": 59860
         }
       ]
     },
