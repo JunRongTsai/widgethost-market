@@ -68,9 +68,13 @@ out\tools\whtool.exe catalog --dist <這個 repo>\packages --base-url https://ra
 git add -A && git commit -m "..." && git push
 ```
 
-主程式：
+主程式（先建 release，再產生目錄：目錄要寫入 release 上更新檔的網址與 SHA-256，1.4.8 起的主程式靠它「直接更新」）：
 
 ```
 build.cmd dist
 gh release create v<版本> dist\WidgetHost-<版本>-minimal.zip dist\WidgetHost-<版本>-full.zip dist\WidgetHost-<版本>-standalone.zip --repo JunRongTsai/widgethost-market --title "WidgetHost <版本>" --notes-file <說明檔>
+out\tools\whtool.exe catalog --dist <這個 repo>\packages --base-url https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages --name "WidgetHost 官方市集" --out <這個 repo>\catalog.json --key %USERPROFILE%\.widgethost\signing.pem --host-version <版本> --host-url https://github.com/JunRongTsai/widgethost-market/releases/latest --host-package dist\WidgetHost-<版本>-minimal.zip --host-package-standalone dist\WidgetHost-<版本>-standalone.zip --host-package-base https://github.com/JunRongTsai/widgethost-market/releases/download/v<版本>/
+git add -A && git commit -m "..." && git push
 ```
+
+`whtool` 會檢查 zip 裡的主程式版本等於 `--host-version`、種類（一般版／免安裝版）正確，放錯檔案會直接拒絕。

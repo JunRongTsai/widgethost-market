@@ -3,9 +3,23 @@
   "name": "WidgetHost 官方市集",
   "updated": "2026-10-23",
   "host": {
-    "version": "1.4.7",
+    "version": "1.4.8",
     "url": "https://github.com/JunRongTsai/widgethost-market/releases/latest",
-    "notes": ""
+    "notes": "",
+    "packages": [
+      {
+        "flavor": "framework",
+        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.8/WidgetHost-1.4.8-minimal.zip",
+        "sha256": "1faada9d28b732eb754d59d8c17281951d73043db9ae12ff2ff4c41f102de8f0",
+        "size": 418775
+      },
+      {
+        "flavor": "standalone",
+        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.8/WidgetHost-1.4.8-standalone.zip",
+        "sha256": "0b3b422036e18e8d375f00cf45d8d635d9d0df8f16ea6cb2cf7c71faccea7122",
+        "size": 54836981
+      }
+    ]
   },
   "plugins": [
     {
