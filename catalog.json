@@ -1,9 +1,9 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "host": {
-    "version": "1.4.6",
+    "version": "1.4.7",
     "url": "https://github.com/JunRongTsai/widgethost-market/releases/latest",
     "notes": ""
   },
@@ -523,6 +523,11 @@
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer.screenshot1.jpg",
+          "sha256": "6e3715665ef3e6367fbd719de6dea2ec86543832afefdb814ccca7caa47e79be",
+          "size": 112854
+        },
+        {
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer.screenshot2.jpg",
           "sha256": "39ef513d4dca5483fe1f105ad980c6e00883e387f4b5fdcdc701497321b12998",
           "size": 88040
         }
