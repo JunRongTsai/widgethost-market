@@ -1,23 +1,23 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-23",
+  "updated": "2026-10-26",
   "host": {
-    "version": "1.4.8",
+    "version": "1.4.9",
     "url": "https://github.com/JunRongTsai/widgethost-market/releases/latest",
     "notes": "",
     "packages": [
       {
         "flavor": "framework",
-        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.8/WidgetHost-1.4.8-minimal.zip",
-        "sha256": "1faada9d28b732eb754d59d8c17281951d73043db9ae12ff2ff4c41f102de8f0",
-        "size": 418775
+        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.9/WidgetHost-1.4.9-minimal.zip",
+        "sha256": "471c3afd066919a53d86d5c461247b7ee5b6616dbaa82e34dc9f2c26b6b65985",
+        "size": 785425
       },
       {
         "flavor": "standalone",
-        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.8/WidgetHost-1.4.8-standalone.zip",
-        "sha256": "0b3b422036e18e8d375f00cf45d8d635d9d0df8f16ea6cb2cf7c71faccea7122",
-        "size": 54836981
+        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.9/WidgetHost-1.4.9-standalone.zip",
+        "sha256": "d8ac38468c7dd9412a48bebf4603611d9002dd09daf03d06a684724f41392380",
+        "size": 49411002
       }
     ]
   },
@@ -84,8 +84,8 @@
       "name": "空氣品質",
       "nameEn": "Air quality",
       "author": "JunRongTsai",
-      "description": "目前 AQI 與 PM2.5、PM10、臭氧等數值，過去 12 小時與未來 24 小時的每小時 AQI 長條圖，依等級變色、超過門檻可通知；內建台灣 22 縣市，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
-      "descriptionEn": "Current AQI with PM2.5, PM10 and ozone, plus an hourly AQI bar chart for the past 12 and next 24 hours, colored by level with optional alerts. Includes Taiwan's 22 cities and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
+      "description": "目前 AQI 與 PM2.5、PM10、臭氧等數值，過去 12 小時與未來 24 小時的每小時 AQI 長條圖，依等級變色、超過門檻可通知；內建台灣 22 縣市，搜尋也找得到 368 個鄉鎮市區與全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
+      "descriptionEn": "Current AQI with PM2.5, PM10 and ozone, plus an hourly AQI bar chart for the past 12 and next 24 hours, colored by level with optional alerts. Includes Taiwan's 22 cities; search also finds its 368 districts and places worldwide. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
       "homepage": "",
       "capabilities": [
         "network"
@@ -129,6 +129,15 @@
           "size": 41923,
           "released": "2026-10-22",
           "notes": "・網路抓取改用與其他小工具共用的程式碼（規則相同：只連 Open-Meteo、12 秒逾時、回應大小上限），行為不變"
+        },
+        {
+          "version": "1.0.3",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.airquality-1.0.3.widgetpkg",
+          "sha256": "f3bae9e17ba4641f63ff61857c3c4bf6a962b8724e401e05c489427236572411",
+          "size": 96396,
+          "released": "2026-10-26",
+          "notes": "・搜尋地名的結果括弧改顯示縣市與鄉鎮（例如「新興（桃園市，觀音區，台灣）」），不再整排都是「臺灣省 or 臺灣省」，同名的地方分得出來；一模一樣的只列一筆\n・搜尋也找得到內建的 368 個鄉鎮市區：搜「新興」會先列出高雄市新興區\n・預先編譯，搭配主程式 1.4.9 開機時出現得更快"
         }
       ],
       "screenshots": [
@@ -532,6 +541,15 @@
           "size": 6677847,
           "released": "2026-10-22",
           "notes": "・點專輯圖（或曲名）可以切到正在播放的程式：已開著就叫到最前面，沒開就啟動它；設定頁可關\n・媒體資訊不同步修正：每秒核對播放狀態與時間軸、換歌後幾秒內補讀專輯圖；有在播放的程式優先，都暫停時不跳到別的程式\n・播放鍵依狀態明確送出播放或暫停並立刻換圖示\n・瀏覽器播完影片後狀態常留在「播放中」：位置停在結尾不動 2 秒就當成已結束\n・圓形散射與圓環一律正方形、邊長至少 360，播放介面一律在圓心"
+        },
+        {
+          "version": "2.6.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.6.0.widgetpkg",
+          "sha256": "46779d170f999ab4a8fdd32fca33656146f3f649da20f5dfbb042f007d4de1ca",
+          "size": 102783,
+          "released": "2026-10-26",
+          "notes": "・修正：主程式啟動後媒體面板一直沒有內容（要等螢幕關掉再打開、或鎖定再解鎖才出現）\n・開機時太早連上系統媒體控制、一直看不到播放程式時，會自動重新連線\n・套件從 6.5 MB 縮小到 58 KB：系統媒體控制改成直接呼叫 Windows，不再附帶 Windows SDK 元件\n・預先編譯，搭配主程式 1.4.9 開機時出現得更快"
         }
       ],
       "screenshots": [
@@ -1607,6 +1625,15 @@
           "size": 50315,
           "released": "2026-10-22",
           "notes": "・選完台灣縣市可以再選鄉鎮市區（內建全台 368 區），天氣就抓那一區的座標\n・搜尋地名的結果括弧改顯示縣市與鄉鎮（例如「中壢（桃園市，中壢區，台灣）」），同名的地方分得出來"
+        },
+        {
+          "version": "1.3.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.3.1.widgetpkg",
+          "sha256": "4c009e0950efcbc8dd2b359ec31d59972fb05177dea9047a4c290acfd1ed4b5d",
+          "size": 99635,
+          "released": "2026-10-26",
+          "notes": "・搜尋地名也找得到內建的 368 個鄉鎮市區：搜「新興」會先列出高雄市新興區，「高雄新興」「新竹東區」這種寫法也可以\n・搜尋結果標示一模一樣的只列一筆\n・預先編譯，搭配主程式 1.4.9 開機時出現得更快"
         }
       ],
       "screenshots": [
