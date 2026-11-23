@@ -16,16 +16,16 @@
       {
         "flavor": "standalone",
         "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.6.0/WidgetHost-1.6.0-standalone.zip",
-        "sha256": "4870d2e9e936d367f4f270553bf323bd68488deb2448fed2856b7aff590bd71e",
-        "size": 49548199
+        "sha256": "160ba471338b2db1408e7075cdd334c856058f1af48ea066b12482c476623a1e",
+        "size": 49611240
       }
     ],
     "appPackages": [
       {
         "flavor": "standalone",
         "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.6.0/WidgetHost-1.6.0-standalone-app.zip",
-        "sha256": "cf740a62abc3a0725c189f6ac037f9c3e7a143ec13e2e990e03051796c87d0d1",
-        "size": 2279915,
+        "sha256": "435f596af2cfe94183ea7db5f7df5f31e7196a143aeeee8cba2df5d64fbb7e1e",
+        "size": 2342956,
         "runtimeVersion": "Microsoft.NETCore.App 10.0.15;Microsoft.WindowsDesktop.App 10.0.15"
       }
     ]
