@@ -1330,8 +1330,8 @@
       "name": "持股看板",
       "nameEn": "Stock watchlist",
       "author": "JunRongTsai",
-      "description": "台股、美股的即時股價、漲跌與當日走勢。輸入代號即可（上市、上櫃自動判斷），台股顯示中文名稱，紅漲綠跌可切換。台股盤中（週一到週五 09:00～13:35）用證交所即時資料，其餘股價來自 Yahoo 財經。只存代號，不存任何持股或成本資料。",
-      "descriptionEn": "Live Taiwan and US stock prices with change and an intraday chart. Just enter the symbols; names are fetched automatically. Taiwan stocks use TWSE real-time data during trading hours (Mon–Fri 09:00–13:35); other quotes come from Yahoo Finance. Only symbols are stored, never holdings or costs.",
+      "description": "台股、美股的即時股價、漲跌與當日走勢，也可以看台指期（含小台、微台）與夜盤。輸入代號即可（上市、上櫃自動判斷），台股顯示中文名稱，紅漲綠跌可切換。台股盤中（週一到週五 09:00～13:35）用證交所即時資料，台指期用期交所資料，其餘股價來自 Yahoo 財經。只存代號，不存任何持股或成本資料。",
+      "descriptionEn": "Live Taiwan and US stock prices with change and an intraday chart, plus TAIEX futures (near month) including the night session. Just enter the symbols; names are fetched automatically. Taiwan stocks use TWSE real-time data during trading hours (Mon–Fri 09:00–13:35) and futures use TAIFEX data; other quotes come from Yahoo Finance. Only symbols are stored, never holdings or costs.",
       "homepage": "",
       "capabilities": [
         "network"
@@ -1344,10 +1344,11 @@
         "networkHosts": [
           "query1.finance.yahoo.com",
           "tw.stock.yahoo.com",
-          "mis.twse.com.tw"
+          "mis.twse.com.tw",
+          "mis.taifex.com.tw"
         ],
-        "notes": "台股盤中向證交所（mis.twse.com.tw）查即時價與漲跌停價，其餘向 Yahoo 財經查；證交所連不上或非交易時段自動改用 Yahoo。公司網路若封鎖這些網站就無法更新。",
-        "notesEn": "During Taiwan trading hours quotes and limit prices come from TWSE (mis.twse.com.tw); otherwise from Yahoo Finance, which is also the fallback when TWSE is unreachable. It won't update if your network blocks these sites."
+        "notes": "台股盤中向證交所（mis.twse.com.tw）查即時價與漲跌停價，台指期等期貨向期交所（mis.taifex.com.tw）查日盤與夜盤，其餘向 Yahoo 財經查；證交所連不上或非交易時段自動改用 Yahoo。公司網路若封鎖這些網站就無法更新。",
+        "notesEn": "Taiwan stock quotes and limit prices come from TWSE (mis.twse.com.tw) during trading hours, TAIEX futures (day and night sessions) from TAIFEX (mis.taifex.com.tw), and the rest from Yahoo Finance, also the fallback when TWSE is unreachable. It won't update if your network blocks these sites."
       },
       "versions": [
         {
@@ -1457,13 +1458,22 @@
           "size": 54068,
           "released": "2026-10-22",
           "notes": "・台股盤中（週一到週五 09:00～13:35）改用證交所即時資料，不再延遲 15～20 分鐘；漲停跌停價也來自證交所\n・盤外、假日、連不上證交所時自動退回 Yahoo 財經；頁尾顯示目前的資料來源；設定頁可關\n・網路抓取改用與其他小工具共用的程式碼"
+        },
+        {
+          "version": "1.8.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks-1.8.0.widgetpkg",
+          "sha256": "130cca33f270ccd573ab1182ffe581eabaf9d4688dad59534a2bb17d04767dfc",
+          "size": 119026,
+          "released": "2026-11-23",
+          "notes": "・可以加入台指期（近月）：在「標的」分頁輸入「台指期」「小台」「微台」，電子期、金融期也可以\n・「顯示」分頁新增「顯示台指期夜盤」（預設開）：15:00 到隔天 05:00 顯示夜盤價；關掉就只看日盤\n・期貨資料來自臺灣期貨交易所（mis.taifex.com.tw），清單裡加了期貨才會連線\n・小工具看不見時的到價檢查，台股盤中也改用證交所的即時價\n・精簡樣式在窄的看板上，名稱不再跟價格黏在一起；英文介面最窄時頁尾不疊字"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.stocks.screenshot1.jpg",
-          "sha256": "62e9e505820a25de4fe05073edd20000dfca0eb9bb06b24c6ec5d23c79b305a9",
-          "size": 62681
+          "sha256": "88dcf2134e256dde690478ff18b478324d8285c597ce9be3aa8802a971c02ea9",
+          "size": 59948
         }
       ]
     },
