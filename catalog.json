@@ -1,23 +1,32 @@
 {
   "version": 1,
   "name": "WidgetHost 官方市集",
-  "updated": "2026-10-26",
+  "updated": "2026-11-23",
   "host": {
-    "version": "1.4.9",
+    "version": "1.6.0",
     "url": "https://github.com/JunRongTsai/widgethost-market/releases/latest",
     "notes": "",
     "packages": [
       {
         "flavor": "framework",
-        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.9/WidgetHost-1.4.9-minimal.zip",
-        "sha256": "471c3afd066919a53d86d5c461247b7ee5b6616dbaa82e34dc9f2c26b6b65985",
-        "size": 785425
+        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.6.0/WidgetHost-1.6.0-minimal.zip",
+        "sha256": "dce533d04faf8d943e6d596791102c565b94e69124736e1c514ce26584ea4aba",
+        "size": 877269
       },
       {
         "flavor": "standalone",
-        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.4.9/WidgetHost-1.4.9-standalone.zip",
-        "sha256": "d8ac38468c7dd9412a48bebf4603611d9002dd09daf03d06a684724f41392380",
-        "size": 49411002
+        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.6.0/WidgetHost-1.6.0-standalone.zip",
+        "sha256": "4870d2e9e936d367f4f270553bf323bd68488deb2448fed2856b7aff590bd71e",
+        "size": 49548199
+      }
+    ],
+    "appPackages": [
+      {
+        "flavor": "standalone",
+        "url": "https://github.com/JunRongTsai/widgethost-market/releases/download/v1.6.0/WidgetHost-1.6.0-standalone-app.zip",
+        "sha256": "cf740a62abc3a0725c189f6ac037f9c3e7a143ec13e2e990e03051796c87d0d1",
+        "size": 2279915,
+        "runtimeVersion": "Microsoft.NETCore.App 10.0.15;Microsoft.WindowsDesktop.App 10.0.15"
       }
     ]
   },
@@ -27,8 +36,8 @@
       "name": "今日行程",
       "nameEn": "Agenda",
       "author": "JunRongTsai",
-      "description": "讀行事曆訂閱連結（.ics），列出今天與接下來的行程並提前提醒。標題下有下一個行程的倒數，開始時再通知一次並閃動提示。不用登入帳號。",
-      "descriptionEn": "Reads calendar subscription links (.ics) and lists today's and upcoming events with reminders. Shows a countdown to the next event, and notifies again with a flash when it starts. No account sign-in needed.",
+      "description": "讀行事曆訂閱連結（.ics），列出今天與接下來的行程並提前提醒。標題下有下一個行程的倒數，開始時再通知一次並閃動提示；Teams、Meet、Zoom、Webex 會議按「加入」就開。不用登入帳號。",
+      "descriptionEn": "Reads calendar subscription links (.ics) and lists today's and upcoming events with reminders. Shows a countdown to the next event, notifies again with a flash when it starts, and joins Teams, Meet, Zoom or Webex meetings in one click. No account sign-in needed.",
       "homepage": "",
       "capabilities": [
         "network"
@@ -69,13 +78,22 @@
           "size": 55391,
           "released": "2026-10-22",
           "notes": "・標題下的「下一個」會倒數：最後 5 分鐘每 30 秒更新、最後 1 分鐘每秒更新；超過 24 小時只顯示日期時間\n・行程開始的那一刻再通知一次（原本只有前 N 分鐘的提醒），同一分鐘開始的多件合併成一則\n・行程開始時那一列閃 3 下，之後維持「進行中」樣式；電腦鎖定中不閃\n・倒數列、開始提醒、閃動都可以在設定頁關掉"
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.agenda-1.2.0.widgetpkg",
+          "sha256": "8852b8ede213ebf7ba0f843850c09bd03229eafd6f76a2b0d5a0b3fd679b72c7",
+          "size": 106070,
+          "released": "2026-11-23",
+          "notes": "・會議連結一鍵加入：進行中與下一個行程如果有 Google Meet、Teams、Zoom 這類會議連結，旁邊會出現「加入」按鈕\n・行程多的時候，清單會自動捲到進行中或下一個行程\n・提醒通知不再顯示會議連結與密碼\n・電腦睡眠醒來後，小工具看不見時的提醒不會漏掉"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.agenda.screenshot1.jpg",
-          "sha256": "0d2c9d17f8f8394d5fbe2bcad74dff0607ba005fa1d3788f5c31c601ef4ef9d0",
-          "size": 52252
+          "sha256": "1c4712d09560f7cf63f34bd3a047a7eee7afabc0d36acceb8bbef4f075ec19f9",
+          "size": 53729
         }
       ]
     },
@@ -84,8 +102,8 @@
       "name": "空氣品質",
       "nameEn": "Air quality",
       "author": "JunRongTsai",
-      "description": "目前 AQI 與 PM2.5、PM10、臭氧等數值，過去 12 小時與未來 24 小時的每小時 AQI 長條圖，依等級變色、超過門檻可通知；內建台灣 22 縣市，搜尋也找得到 368 個鄉鎮市區與全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
-      "descriptionEn": "Current AQI with PM2.5, PM10 and ozone, plus an hourly AQI bar chart for the past 12 and next 24 hours, colored by level with optional alerts. Includes Taiwan's 22 cities; search also finds its 368 districts and places worldwide. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
+      "description": "目前 AQI 與 PM2.5、PM10、臭氧等數值，過去 12 小時與未來 24 小時的每小時 AQI 長條圖，依等級變色、超過門檻可通知；內建台灣 22 縣市與 368 個鄉鎮市區，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
+      "descriptionEn": "Current AQI with PM2.5, PM10 and ozone, plus an hourly AQI bar chart for the past 12 and next 24 hours, colored by level with optional alerts. Includes Taiwan's 22 cities and 368 districts, plus worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
       "homepage": "",
       "capabilities": [
         "network"
@@ -138,6 +156,15 @@
           "size": 96396,
           "released": "2026-10-26",
           "notes": "・搜尋地名的結果括弧改顯示縣市與鄉鎮（例如「新興（桃園市，觀音區，台灣）」），不再整排都是「臺灣省 or 臺灣省」，同名的地方分得出來；一模一樣的只列一筆\n・搜尋也找得到內建的 368 個鄉鎮市區：搜「新興」會先列出高雄市新興區\n・預先編譯，搭配主程式 1.4.9 開機時出現得更快"
+        },
+        {
+          "version": "1.0.5",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.airquality-1.0.5.widgetpkg",
+          "sha256": "97bcc3bd31c45b9d3854af373e3a6f11e281bc5941c2b6c43d05060fe0714dc4",
+          "size": 101241,
+          "released": "2026-11-23",
+          "notes": "・地點設定頁可以先選縣市、再選鄉鎮市區（368 個）\n・小工具看不見時的背景檢查照資料的新舊排時間，頻繁切換視窗時不會一直往後延\n・連線卡住時，不會讓後面的更新一起等到逾時"
         }
       ],
       "screenshots": [
@@ -219,8 +246,8 @@
       "name": "農曆行事曆",
       "nameEn": "Lunar calendar",
       "author": "JunRongTsai",
-      "description": "月曆加農曆、二十四節氣、台灣節日與依規則推算的補假，以及可自訂的倒數日（支援農曆生日、每年重複）；在月曆上按兩下日期就能直接新增倒數日，有倒數日的日子會標上小圓點。",
-      "descriptionEn": "A month calendar with Chinese lunar dates, the 24 solar terms, Taiwan holidays with calculated make-up days off, and custom countdowns. Double-click a day on the calendar to add a countdown; days with countdowns are marked with a dot.",
+      "description": "月曆加農曆、二十四節氣、台灣節日與依規則推算的補假，以及可自訂的倒數日（支援農曆生日、每年重複）；在月曆上按兩下日期就能直接新增倒數日，有倒數日的日子會標上小圓點，到期當天（或提前幾天）可以跳通知。",
+      "descriptionEn": "A month calendar with Chinese lunar dates, the 24 solar terms, Taiwan holidays with calculated make-up days off, and custom countdowns. Double-click a day on the calendar to add a countdown; days with countdowns are marked with a dot, and you can be notified on the day (or a few days before).",
       "homepage": "",
       "capabilities": [],
       "requirements": null,
@@ -296,6 +323,15 @@
           "size": 38198,
           "released": "2026-10-22",
           "notes": "・月曆上按兩下日期、或按右鍵選「以這天新增倒數日」就能新增，不必進設定頁；過去的日期預設每年重複、可選農曆\n・有倒數日的格子右上角有小圓點，滑鼠停在上面顯示名稱；按兩下可以編輯或刪除"
+        },
+        {
+          "version": "1.5.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.calendar-1.5.0.widgetpkg",
+          "sha256": "91bd536485555b0c55a4862b13c514b2bac34d2313be79a38d624cbc9ac96059",
+          "size": 69028,
+          "released": "2026-11-23",
+          "notes": "・倒數日到期通知（預設關，在設定的「通知」分頁打開）：可以設定提前幾天、幾點通知\n・當天與提前到期的合併成一則通知；小工具隱藏或被其他視窗蓋住時照樣通知"
         }
       ],
       "screenshots": [
@@ -324,7 +360,7 @@
         "optionalHardware": [],
         "networkHosts": [],
         "notes": "只監看文字與檔案清單，圖片等其他格式不記錄。所有內容只放在記憶體，絕不寫入磁碟（設定檔只存外觀與選項）；重開 WidgetHost 後置頂與最近都會清空，這是刻意的隱私設計。置頂可取名字，名字和內容一樣只在記憶體。密碼管理員標示為機密的內容會自動略過，超過 200 KB 的文字也不記；暫停擷取或電腦鎖定時不記錄。不用鍵盤滑鼠勾子，只收剪貼簿變更通知。",
-        "notesEn": "Only text and file lists are watched; images are never recorded. Everything stays in memory and is never written to disk; pinned and recent items are cleared when WidgetHost restarts, by design. Pinned items can be named; like the content, names are kept in memory only. Content marked sensitive by password managers and text over 200 KB are skipped. No input hooks."
+        "notesEn": "Only text and file lists are watched; images are never recorded. Everything, including pinned item names, stays in memory only, is never written to disk and is cleared when WidgetHost restarts. Content marked sensitive by password managers and text over 200 KB are skipped. No input hooks."
       },
       "versions": [
         {
@@ -353,6 +389,15 @@
           "size": 33614,
           "released": "2026-10-22",
           "notes": "・置頂的項目可以取名字（右鍵「取名字…」或按兩下），例如「公司地址」，列上顯示粗體名字加淡色的內容前段\n・名字跟內容一樣只放在記憶體，不寫入磁碟；點一下複製的仍是內容"
+        },
+        {
+          "version": "1.1.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.clipboard-1.1.1.widgetpkg",
+          "sha256": "35841514a50408aa421b11e955155f4180d63b13342e179a904a82698c923829",
+          "size": 49653,
+          "released": "2026-11-23",
+          "notes": "・在鎖定畫面下啟動時，「鎖定時暫停擷取」會正確生效\n・市集的英文說明縮短，不再被截斷"
         }
       ],
       "screenshots": [
@@ -550,6 +595,15 @@
           "size": 102783,
           "released": "2026-10-26",
           "notes": "・修正：主程式啟動後媒體面板一直沒有內容（要等螢幕關掉再打開、或鎖定再解鎖才出現）\n・開機時太早連上系統媒體控制、一直看不到播放程式時，會自動重新連線\n・套件從 6.5 MB 縮小到 58 KB：系統媒體控制改成直接呼叫 Windows，不再附帶 Windows SDK 元件\n・預先編譯，搭配主程式 1.4.9 開機時出現得更快"
+        },
+        {
+          "version": "2.6.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.equalizer-2.6.1.widgetpkg",
+          "sha256": "8d37d6ddafa07b6dbbc9c25f45bbc9acf0119e2b1c5ececdb113f4efdade4987",
+          "size": 116120,
+          "released": "2026-11-23",
+          "notes": "・更省電：沒有底板、媒體橫條在下方時，橫條不必每一格都重畫"
         }
       ],
       "screenshots": [
@@ -587,7 +641,7 @@
           "open.er-api.com"
         ],
         "notes": "只會連 Yahoo 財經（匯率與當日走勢）、CoinGecko（加密貨幣價格）與 open.er-api.com（Yahoo 連不上時的每日匯率備援），全部 https、免金鑰。資料不是即時的：Yahoo 匯率可能延遲幾分鐘到十幾分鐘，CoinGecko 約每分鐘更新一次，備援匯率每天更新一次；僅供參考。只傳送幣別代碼，不傳送任何個人資料；最近一次的匯率會快取在小工具的資料夾，重開機先顯示上次的資料。看不見時不更新，但設了到價提醒時每 15 分鐘會背景檢查一次。換算器用看板手上的匯率在本機計算，不另外連網；只有在你按「複製結果」時才會寫入剪貼簿，不會讀取或監看剪貼簿。",
-        "notesEn": "Connects only to Yahoo Finance (rates and intraday chart), CoinGecko (crypto prices) and open.er-api.com (daily-rate fallback when Yahoo is unreachable), all over https and without keys. Data is not real-time: Yahoo rates may be delayed by several minutes, CoinGecko updates about once a minute and the fallback once a day; for reference only. Only currency codes are sent, never personal data; the latest rates are cached in the widget's data folder so the last data is shown after a restart. No updates while hidden, except a background check every 15 minutes when rate alerts are set. The converter uses the rates already on the board and computes locally without extra requests; it only writes to the clipboard when you choose \"Copy result\", and never reads or watches the clipboard."
+        "notesEn": "Clipboard: written only when you click \"Copy result\" in the converter, never read or watched. Connects only to Yahoo Finance, CoinGecko and open.er-api.com over https, sending only currency codes. Rates may be delayed and are cached. Paused while hidden, except a 15-min check if alerts are set."
       },
       "versions": [
         {
@@ -616,6 +670,15 @@
           "size": 54184,
           "released": "2026-10-22",
           "notes": "・點一列開啟換算器：輸入金額直接換算（雙向、交叉匯率、加密貨幣都可），結果可一鍵複製；右鍵選單也有「換算金額」\n・金額會記住；不想要點列開換算器可以在設定頁關掉"
+        },
+        {
+          "version": "1.1.1",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.forex-1.1.1.widgetpkg",
+          "sha256": "314d11559126174bce68ac091e6b6f871916d631edf7ff1571f061e95cb40a33",
+          "size": 93078,
+          "released": "2026-11-23",
+          "notes": "・連線卡住時，不會讓後面的更新一起等到逾時\n・市集的英文說明縮短，不再被截斷"
         }
       ],
       "screenshots": [
@@ -662,6 +725,15 @@
           "size": 33520,
           "released": "2026-10-18",
           "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
+        },
+        {
+          "version": "1.0.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.health-1.0.2.widgetpkg",
+          "sha256": "3fcb619dcaa27cf5dd77f3cf1b9e167e1ad00ddf84440c5fc6a4e1846f08b5cb",
+          "size": 52781,
+          "released": "2026-11-23",
+          "notes": "・在鎖定畫面下啟動時，會正確知道電腦已經鎖定"
         }
       ],
       "screenshots": [
@@ -783,6 +855,15 @@
           "size": 73028,
           "released": "2026-10-18",
           "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
+        },
+        {
+          "version": "1.5.2",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.launcher-1.5.2.widgetpkg",
+          "sha256": "3e67748c81ade493f26ee63d44dbb06be36af7fb4dcbaca25463127ba2fd9bfc",
+          "size": 120431,
+          "released": "2026-11-23",
+          "notes": "・回到看得見時不再每次都重新檢查所有項目的位置（30 秒內只查一次），放在網路磁碟上的項目不會一直被喚醒\n・記錄檔不再寫入項目的路徑"
         }
       ],
       "screenshots": [
@@ -803,8 +884,8 @@
       "name": "連線品質",
       "nameEn": "Connection quality",
       "author": "JunRongTsai",
-      "description": "持續 ping 路由器、1.1.1.1 與你指定的目標：延遲曲線、平均／最大／抖動、封包遺失，加上 Wi-Fi 的 SSID、訊號、速率與頻段；斷線、恢復或遺失率偏高時通知；底部的 24 小時時間軸與右鍵「24 小時摘要」記下不在座位時的斷線與高延遲。",
-      "descriptionEn": "Keeps pinging your router, 1.1.1.1 and hosts you choose: latency graph, average / max / jitter, packet loss, plus Wi-Fi SSID, signal, link speed and band, with alerts when the connection drops, recovers or loses too many packets. A 24-hour timeline and a right-click summary record outages and high-latency periods that happened while you were away.",
+      "description": "持續 ping 路由器、1.1.1.1 與你指定的目標：延遲曲線、平均／最大／抖動、封包遺失，加上 Wi-Fi 的 SSID、訊號、速率與頻段；斷線、恢復或遺失率偏高時通知；底部的 24 小時時間軸與右鍵「24 小時摘要」記下斷線與高延遲。只在小工具看得見時監看：電腦鎖定、螢幕關閉，或小工具被隱藏、暫停時都不量，這些時段在時間軸上是灰色。",
+      "descriptionEn": "Keeps pinging your router, 1.1.1.1 and hosts you choose: latency graph, average / max / jitter, packet loss, plus Wi-Fi SSID, signal, link speed and band, with alerts when the connection drops, recovers or loses too many packets. A 24-hour timeline and a right-click summary record outages and high-latency periods. It only monitors while the widget is visible: nothing is measured while the PC is locked, the screen is off, or the widget is hidden or paused, and those periods show grey on the timeline.",
       "homepage": "",
       "capabilities": [
         "network"
@@ -847,13 +928,22 @@
           "size": 46495,
           "released": "2026-10-22",
           "notes": "・24 小時斷線／高延遲記錄：底部多一條 24 格時間軸（綠正常、黃高延遲、紅斷線），右鍵「24 小時摘要」看斷線幾次共幾分鐘、每小時成功率\n・可選「斷線超過 1 分鐘後恢復時通知」（預設關）\n・記錄只放在記憶體，重開就重來；連續次數與高延遲門檻可在設定頁調整"
+        },
+        {
+          "version": "1.2.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.netquality-1.2.0.widgetpkg",
+          "sha256": "b72f52376bc7de40322a04879346efd591f8dfbd35edfb2b88d7fe2bf6a9603f",
+          "size": 79508,
+          "released": "2026-11-23",
+          "notes": "・時間軸把沒有監看的時段（電腦鎖定、螢幕關閉、小工具隱藏或暫停）標成灰色，不再算成斷線；24 小時摘要會列出沒監看的時間\n・停止監看時正好在斷線中，不再把沒監看的時間算進斷線長度\n・量測很慢時（例如斷線中查不到名稱）結果不再被丟掉\n・調整電腦時間不會被當成斷線或沒監看\n・摘要視窗會依內容加寬；說明改成實際行為：只在小工具看得見時監看"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.netquality.screenshot1.jpg",
-          "sha256": "2b3a10a75d88e6dde3b48a519c8c0d17ce5bb355efa51f61ad0766cfd7dabae5",
-          "size": 72279
+          "sha256": "0d93e0b5ed72e72561007b8bc5598487862fc18d74d2775a68ae1f90278d2a12",
+          "size": 72189
         }
       ]
     },
@@ -862,8 +952,8 @@
       "name": "便利貼",
       "nameEn": "Sticky notes",
       "author": "JunRongTsai",
-      "description": "桌面便利貼：按兩下直接在上面寫，「- [ ] 」開頭的行會變成可以打勾的待辦項目，完成的自動劃線並沉到底部。按住待辦項目可以拖到另一張便利貼或其他程式，也接受從其他程式拖進來的文字。七種紙色、內容多時自動長高，要幾張就新增幾張。",
-      "descriptionEn": "Sticky notes for your desktop: double-click to write on them, lines starting with \"- [ ] \" become to-dos you can tick off, and completed ones sink to the bottom. Drag a to-do item to another note or into another program, and drop text from other programs onto a note. Seven paper colors, grows with its content, and you can add as many as you like.",
+      "description": "桌面便利貼：按兩下直接在上面寫，「- [ ] 」開頭的行會變成可以打勾的待辦項目，完成的自動劃線並沉到底部。按住待辦項目可以拖到另一張便利貼或其他程式，也接受從其他程式拖進來的文字。七種紙色、拖右下角的折角就能調整大小、內容多時自動長高，要幾張就新增幾張。",
+      "descriptionEn": "Sticky notes for your desktop: double-click to write on them, lines starting with \"- [ ] \" become to-dos you can tick off, and completed ones sink to the bottom. Drag a to-do item to another note or into another program, and drop text from other programs onto a note. Seven paper colors, drag the folded corner to resize, grows with its content, and you can add as many as you like.",
       "homepage": "",
       "capabilities": [],
       "requirements": {
@@ -920,6 +1010,15 @@
           "size": 26315,
           "released": "2026-10-22",
           "notes": "・新增「清單模式」（設定→外觀）：每一行就是一個待辦項目，按 Enter 換下一項，不必打「- [ ] 」；畫面上自動折行的不算新的一項\n・清單模式編輯時只看到文字，完成的項目以「✓ 」開頭；打開時把現有每一行轉成待辦"
+        },
+        {
+          "version": "1.4.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.notes-1.4.0.widgetpkg",
+          "sha256": "9635baa7c756a8457a4264306b8d5cf363862798f713c19a43540495f8b121ca",
+          "size": 42204,
+          "released": "2026-11-23",
+          "notes": "・拖便利貼右下角的折角可以直接調整大小（左上角不動；鎖定位置時不能拖）"
         }
       ],
       "screenshots": [
@@ -945,8 +1044,8 @@
         "hardware": [],
         "optionalHardware": [],
         "networkHosts": [],
-        "notes": "只讀取你在設定裡選的那個資料夾（可含子資料夾），資料夾路徑存在設定檔裡；不連網、不寫入任何檔案，記錄檔不記檔名。支援 jpg、png、bmp、gif（會動的照樣播放）、tif，以及 webp、heic／heif、avif、jxl（用 Windows 的影像解碼器）。heic 需要 Microsoft Store 的「HEIF 影像延伸模組」與「HEVC 視訊延伸模組」、avif 需要「HEIF 影像延伸模組」與「AV1 Video Extension」、webp 需要「Webp 影像延伸模組」（Windows 11 通常已內建）；沒裝的會略過並在設定頁提示。",
-        "notesEn": "Reads only the folder you pick in Settings (optionally with subfolders); the folder path is stored in the settings file. No network access, nothing is written to disk, and file names are never logged. Supports jpg, png, bmp, gif (animated ones play) and tif, plus webp, heic/heif, avif and jxl through the Windows image decoders. heic needs the 'HEIF Image Extensions' and 'HEVC Video Extensions' from the Microsoft Store, avif the 'HEIF Image Extensions' and 'AV1 Video Extension', webp the 'Webp Image Extensions' (usually preinstalled on Windows 11); files without a decoder are skipped and Settings says so."
+        "notes": "只讀取你在設定裡選的那個資料夾（可含子資料夾），資料夾路徑存在設定檔裡；不連網、不寫入任何檔案，記錄檔不記檔名或路徑。支援 jpg、png、bmp、gif（會動的照樣播放）、tif，以及 webp、heic／heif、avif、jxl（用 Windows 的影像解碼器）。heic 需要 Microsoft Store 的「HEIF 影像延伸模組」與「HEVC 視訊延伸模組」、avif 需要「HEIF 影像延伸模組」與「AV1 Video Extension」、webp 需要「Webp 影像延伸模組」（Windows 11 通常已內建）；沒裝的會略過並在設定頁提示。",
+        "notesEn": "Reads only the folder you choose (subfolders optional); its path is saved in the settings file. No network, writes nothing, never logs file names or paths. Microsoft Store codecs: heic needs HEIF Image + HEVC Video Extensions, avif HEIF Image + AV1 Video Extension, webp Webp Image Extensions."
       },
       "versions": [
         {
@@ -984,6 +1083,15 @@
           "size": 41939,
           "released": "2026-10-22",
           "notes": "・支援 webp、heic、heif、avif（用 Windows 內建的影像解碼器）；手機拍的 heic 照片可以直接放\n・沒裝對應的解碼器時那些照片會被略過，設定頁會提示要從 Microsoft Store 裝哪個延伸模組"
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.photoframe-1.3.0.widgetpkg",
+          "sha256": "946e8c862fa15ccd69c43d897d3ebbd9192b16857fa7b86e3722b363352b37ce",
+          "size": 71868,
+          "released": "2026-11-23",
+          "notes": "・直式照片填滿相框時可以選「偏上」裁切，人像比較不會被切到頭（新加的相框預設偏上；原有的相框維持置中，可以在「外觀」分頁改）\n・暫時看不見再回來時，照片不會先消失再出現\n・記錄檔不再寫入照片的路徑"
         }
       ],
       "screenshots": [
@@ -1077,6 +1185,15 @@
           "size": 30441,
           "released": "2026-10-22",
           "notes": "・每日專注統計：圓環下方顯示「今天 N 個・分鐘」與最近 7 天長條圖；右鍵「專注統計」看 7 天／30 天合計、平均、最長連續天數，可清除\n・統計只存在本機（日期、次數、分鐘），保留 90 天\n・「請勿打擾」Windows 沒有提供公開的開關介面，請在 Windows 設定的「專注」裡啟動專注工作階段"
+        },
+        {
+          "version": "1.5.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.pomodoro-1.5.0.widgetpkg",
+          "sha256": "739e40fafbe8ade3609eb06564545734672e3b0158bb4ec54392cfc5108ec1e6",
+          "size": 48162,
+          "released": "2026-11-23",
+          "notes": "・電腦睡眠的時間不算進專注時間：醒來後接著倒數，不會一醒來就跳「專注結束」\n・小工具設成隱藏時，重新啟動後到點照樣通知\n・在鎖定畫面下啟動時，「鎖定時不響」會正確生效"
         }
       ],
       "screenshots": [
@@ -1544,8 +1661,8 @@
       "name": "天氣",
       "nameEn": "Weather",
       "author": "JunRongTsai",
-      "description": "目前天氣、接下來 6 小時與 3～7 天預報，內建台灣 22 縣市與 368 個鄉鎮市區，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
-      "descriptionEn": "Current weather, the next 6 hours and a 3–7 day forecast. Includes Taiwan's 22 cities and 368 districts and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
+      "description": "目前天氣、接下來 6 小時與 3～7 天預報，可在快下雨時通知；內建台灣 22 縣市與 368 個鄉鎮市區，也能搜尋全球地點。資料來自 Open-Meteo（免金鑰，CC BY 4.0，免費服務僅限非商業用途），每 30 分鐘更新，連不上時顯示上次的資料。",
+      "descriptionEn": "Current weather, the next 6 hours and a 3–7 day forecast, with an optional alert before it rains. Includes Taiwan's 22 cities and 368 districts and worldwide search. Data from Open-Meteo (no key; CC BY 4.0; the free service is for non-commercial use), refreshed every 30 minutes, with the last data shown when offline.",
       "homepage": "",
       "capabilities": [
         "network"
@@ -1559,8 +1676,8 @@
           "api.open-meteo.com",
           "geocoding-api.open-meteo.com"
         ],
-        "notes": "需要連得到 Open-Meteo；公司網路若封鎖這個網站就無法更新。免費服務僅限非商業用途。",
-        "notesEn": "Needs access to Open-Meteo; it won't update if your network blocks the site. The free service is for non-commercial use."
+        "notes": "需要連得到 Open-Meteo；公司網路若封鎖這個網站就無法更新。免費服務僅限非商業用途。開了降雨提醒時，小工具看不見也會每 30 分鐘在背景連一次 Open-Meteo（只送座標）。",
+        "notesEn": "Needs access to Open-Meteo; it won't update if your network blocks the site. The free service is for non-commercial use. With the rain alert on, it also checks Open-Meteo every 30 minutes while hidden (only the coordinates are sent)."
       },
       "versions": [
         {
@@ -1634,6 +1751,15 @@
           "size": 99635,
           "released": "2026-10-26",
           "notes": "・搜尋地名也找得到內建的 368 個鄉鎮市區：搜「新興」會先列出高雄市新興區，「高雄新興」「新竹東區」這種寫法也可以\n・搜尋結果標示一模一樣的只列一筆\n・預先編譯，搭配主程式 1.4.9 開機時出現得更快"
+        },
+        {
+          "version": "1.4.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.weather-1.4.0.widgetpkg",
+          "sha256": "1936d6a5901958128a16d3f516ee8d3d63441ca29494066334880bf3ecef1099",
+          "size": 114280,
+          "released": "2026-11-23",
+          "notes": "・快下雨時通知（預設關，在設定的「通知」分頁打開）：可以設定降雨機率門檻與提前幾小時；同一段雨只通知一次，小工具看不見時每 30 分鐘在背景檢查\n・細節列會顯示「15:00 起可能下雨 70%」\n・地點設定頁可以先選縣市、再選鄉鎮市區\n・剛換地點時連不上，會在 10 秒、30 秒後自動再試"
         }
       ],
       "screenshots": [
@@ -1649,8 +1775,8 @@
       "name": "世界時鐘",
       "nameEn": "World clock",
       "author": "JunRongTsai",
-      "description": "多個時區並排顯示：和本地的時差、明天／昨天、白天／晚上。清單、橫排卡片或指針時鐘面三種樣式，時區用 Windows 內建清單，夏令時間自動換算。",
-      "descriptionEn": "Several time zones side by side, with the time difference, tomorrow/yesterday and day/night. List, cards or analog clock faces; daylight saving time is handled by Windows.",
+      "description": "多個時區並排顯示：和本地的時差、明天／昨天、白天／晚上。清單、橫排卡片或指針時鐘面三種樣式，時區用 Windows 內建清單，夏令時間自動換算。在小工具上滾動滑鼠滾輪可以換算會議時間：選一個時間，看各地是幾點。",
+      "descriptionEn": "Several time zones side by side, with the time difference, tomorrow/yesterday and day/night. List, cards or analog clock faces; daylight saving time is handled by Windows. Scroll the mouse wheel over it to pick a meeting time and see what time it is everywhere.",
       "homepage": "",
       "capabilities": [],
       "requirements": null,
@@ -1699,13 +1825,22 @@
           "size": 27923,
           "released": "2026-10-18",
           "notes": "・外觀頁的一鍵配色改成下拉選單，每個選項前面有那組配色的色塊預覽；拿掉配色的說明文字"
+        },
+        {
+          "version": "1.3.0",
+          "minHostVersion": "1.4.0",
+          "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock-1.3.0.widgetpkg",
+          "sha256": "99c45e6a5402ed4d99eb8c2040025c175ec256cb91becc31f5bb19e07bbc0b3f",
+          "size": 41357,
+          "released": "2026-11-23",
+          "notes": "・滾輪換算會議時間：在世界時鐘上滾動滑鼠滾輪，所有時區一起往前或往後（預設每格 30 分鐘），方便看「這邊下午 3 點是那邊幾點」\n・換算中按一下，或滑鼠移開約 1 分鐘，就回到現在時間；換算時會標出隔天、前一天"
         }
       ],
       "screenshots": [
         {
           "url": "https://raw.githubusercontent.com/JunRongTsai/widgethost-market/main/packages/widgethost.worldclock.screenshot1.jpg",
-          "sha256": "2528d7b174023c7d9b9cc098e077e94ae26ce5f8585005d3509a85769afad48b",
-          "size": 51880
+          "sha256": "129dabfb715e62fce3a4b1a10e2ac50308a50425c3b2d3e5535665217e280341",
+          "size": 52540
         }
       ]
     }
